@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>¡Gracias por tu compra! | Kenny Coach Team</title>
+    <meta name="description" content="Confirmación de compra Kenny Coach Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/kenny-custom.css">
+
+    <style>
+        body.kc-thanks-body {
+            background: #0a0a0a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+        .kc-thanks-card {
+            max-width: 620px;
+            width: 100%;
+            background: #111;
+            border: 1px solid rgba(201,162,39,0.25);
+            border-radius: 18px;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        .kc-thanks-logo { max-width: 130px; margin-bottom: 25px; }
+        .kc-thanks-icon {
+            width: 74px; height: 74px; border-radius: 50%;
+            background: rgba(46,204,113,0.12);
+            border: 2px solid #2ecc71;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 32px; color: #2ecc71;
+        }
+        .kc-thanks-card h1 { color: #fff; font-size: 26px; font-weight: 800; margin-bottom: 10px; }
+        .kc-thanks-card p.kc-thanks-sub { color: #999; font-size: 15px; margin-bottom: 28px; }
+        .kc-thanks-order {
+            background: #0d0d0d;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .kc-thanks-order-row {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 6px 0; color: #ccc; font-size: 14px;
+        }
+        .kc-thanks-order-row strong { color: #fff; }
+        .kc-thanks-order-row.kc-total { border-top: 1px solid rgba(255,255,255,0.08); margin-top: 8px; padding-top: 12px; }
+        .kc-thanks-order-row.kc-total strong { color: var(--kc-gold); font-size: 17px; }
+        .kc-thanks-download {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: var(--kc-gold); color: #000; font-weight: 700;
+            padding: 15px 30px; border-radius: 8px; text-decoration: none;
+            font-size: 14px; letter-spacing: 0.4px; margin-bottom: 14px;
+            width: 100%; justify-content: center;
+        }
+        .kc-thanks-download:hover { opacity: 0.9; color: #000; }
+        .kc-thanks-pending {
+            background: rgba(201,162,39,0.08);
+            border: 1px dashed rgba(201,162,39,0.4);
+            border-radius: 10px;
+            padding: 14px 16px;
+            font-size: 13px;
+            color: #ccc;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .kc-thanks-pending i { color: var(--kc-gold); margin-right: 8px; }
+        .kc-thanks-disclaimer {
+            background: #0d0d0d;
+            border-left: 3px solid var(--kc-gold);
+            border-radius: 6px;
+            padding: 16px 18px;
+            font-size: 12.5px;
+            color: #999;
+            line-height: 1.7;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .kc-thanks-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+        .kc-thanks-actions a {
+            font-size: 13px; font-weight: 600; padding: 12px 22px; border-radius: 8px;
+            text-decoration: none; border: 1px solid rgba(255,255,255,0.15); color: #ccc;
+        }
+        .kc-thanks-actions a.kc-thanks-wa { border-color: #25d366; color: #25d366; }
+        .kc-thanks-actions a:hover { border-color: var(--kc-gold); color: var(--kc-gold); }
+    </style>
+</head>
+<body class="black-bg kc-thanks-body">
+
+    <div class="kc-thanks-card">
+        <img src="assets/img/kenny/kc-logo.png" alt="Kenny Coach Team" class="kc-thanks-logo">
+        <div class="kc-thanks-icon"><i class="fas fa-check"></i></div>
+        <h1 id="kc-thanks-title">¡Gracias por tu compra!</h1>
+        <p class="kc-thanks-sub" id="kc-thanks-message">Tu pedido fue confirmado. Kenny Coach te espera para comenzar esta nueva etapa.</p>
+
+        <div class="kc-thanks-order">
+            <div class="kc-thanks-order-row">
+                <span>Programa(s)</span>
+                <strong id="kc-thanks-plan">—</strong>
+            </div>
+            <div class="kc-thanks-order-row kc-total">
+                <span>Total pagado</span>
+                <strong id="kc-thanks-total">—</strong>
+            </div>
+        </div>
+
+        <a href="#" id="kc-thanks-download-btn" class="kc-thanks-download">
+            <i class="fas fa-file-pdf"></i> Descargar mi programa en PDF
+        </a>
+
+        <div class="kc-thanks-pending" id="kc-thanks-pending-note">
+            <i class="fas fa-clock"></i>
+            Si tu descarga aún no está disponible, Kenny Coach Team te enviará el PDF de tu programa directamente por WhatsApp una vez confirmado el pago.
+        </div>
+
+        <div class="kc-thanks-disclaimer">
+            <strong>Importante:</strong> Las rutinas de Kenny Coach Performance Series han sido diseñadas exclusivamente para entrenamiento en gimnasio. Al tratarse de programas prediseñados, no contemplan modificaciones individuales. Si necesitas adaptaciones, cambios de ejercicios o seguimiento personalizado, adquiere uno de los planes de acompañamiento de Kenny Coach Team.
+        </div>
+
+        <div class="kc-thanks-actions">
+            <a href="index.html#planes">Ver más planes</a>
+            <a href="https://wa.me/50662036881?text=Hola%20Kenny%20Coach%2C%20acabo%20de%20realizar%20mi%20compra%20y%20quisiera%20confirmar%20mi%20pedido." target="_blank" class="kc-thanks-wa"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        // Lee los datos de la compra desde la URL (?plan=...&total=...&pdf=...)
+        (function () {
+            var params = new URLSearchParams(window.location.search);
+            var plan = params.get('plan');
+            var total = params.get('total');
+            var pdf = params.get('pdf');
+            var name = params.get('name');
+
+            if (plan) document.getElementById('kc-thanks-plan').textContent = decodeURIComponent(plan);
+            if (total) document.getElementById('kc-thanks-total').textContent = decodeURIComponent(total);
+            if (name) {
+                document.getElementById('kc-thanks-message').textContent =
+                    '¡Gracias, ' + decodeURIComponent(name) + '! Tu pedido fue confirmado. Kenny Coach te espera para comenzar esta nueva etapa.';
+            }
+
+            var downloadBtn = document.getElementById('kc-thanks-download-btn');
+            var pendingNote = document.getElementById('kc-thanks-pending-note');
+            if (pdf) {
+                downloadBtn.href = decodeURIComponent(pdf);
+                downloadBtn.setAttribute('download', '');
+                pendingNote.style.display = 'none';
+            } else {
+                // Aún no hay PDF real conectado: se oculta el botón y se resalta el aviso.
+                downloadBtn.style.display = 'none';
+            }
+        })();
+    </script>
+</body>
+</html>

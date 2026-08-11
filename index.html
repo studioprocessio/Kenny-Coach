@@ -1,0 +1,2857 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kenny Coach Team | Entrenamiento Personalizado y Transformación Física</title>
+    <meta name="description" content="Kenneth Sánchez López - Preparador físico profesional, atleta activo Classic Physique. Más de 10 años y 3.000 planes personalizados.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="preload" as="image" href="assets/img/kenny/hero-kenny.jpeg">
+    <link rel="preload" as="image" href="assets/img/kenny/kc-logo.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/kenny-custom.css">
+    <link rel="stylesheet" href="assets/css/kenny-v6-upgrade.css">
+
+    <style>
+        /* ===== GLOBAL: prevenir scroll horizontal en móvil ===== */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        /* Touch targets mínimos (WCAG 2.5.5) */
+        @media (max-width: 767px) {
+            button, a, [role="button"] {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            .kc-gal3-filter-btn { min-height: 40px; }
+            .kc-about-carousel .owl-nav button { min-height: 32px !important; min-width: 32px !important; }
+        }
+        /* ===== NAV: tipografía y padding ligeramente aumentados ===== */
+        #navigation li a {
+            padding: 36px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+            #navigation li a { padding: 36px 10px; font-size: 13.5px; }
+        }
+        @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+            #navigation li a { padding: 36px 13px; font-size: 14.5px; }
+        }
+
+        /* ===== SECCIONES EXTRA: en flujo normal (no modal) ===== */
+        /* Las secciones extra viven ocultas y se muestran en página */
+        .kc-page-section {
+            display: none;
+            animation: kcSectionFadeIn 0.4s ease;
+        }
+        .kc-page-section.kc-section-active {
+            display: block;
+        }
+        @keyframes kcSectionFadeIn {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== Botón activo en nav ===== */
+        #navigation li a.kc-nav-active {
+            color: var(--kc-gold, #c9a227) !important;
+        }
+
+        /* ===== Rutinas Digitales — rediseño premium ===== */
+        .kc-perf-series-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .kc-perf-series-eyebrow {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--kc-gold) 0%, #e8c84a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .kc-perf-series-title {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            line-height: 1.15;
+            margin-bottom: 10px;
+        }
+        .kc-perf-series-title span { color: var(--kc-gold); }
+        .kc-perf-series-sub {
+            color: #888;
+            font-size: 14px;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        .kc-perf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 991px) { .kc-perf-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 575px) { .kc-perf-grid { grid-template-columns: 1fr; } }
+
+        .kc-perf-card {
+            background: #101010;
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 14px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.35s ease;
+            position: relative;
+        }
+        .kc-perf-card:hover {
+            border-color: var(--kc-gold);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 48px rgba(201,162,39,0.18);
+        }
+        .kc-perf-card-header {
+            position: relative;
+            height: 140px;
+            overflow: hidden;
+        }
+        .kc-perf-card-bg {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center 20%;
+            transition: transform 0.5s ease;
+            filter: brightness(0.55);
+        }
+        .kc-perf-card:hover .kc-perf-card-bg { transform: scale(1.07); filter: brightness(0.45); }
+        .kc-perf-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.65) 100%);
+        }
+        .kc-perf-card-badge {
+            position: absolute;
+            top: 12px;
+            left: 14px;
+            background: rgba(201,162,39,0.15);
+            border: 1px solid rgba(201,162,39,0.55);
+            color: var(--kc-gold);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+        .kc-perf-card-icon {
+            position: absolute;
+            bottom: 12px;
+            right: 14px;
+            color: rgba(201,162,39,0.7);
+            font-size: 28px;
+        }
+        .kc-perf-card-body {
+            padding: 18px 20px 20px;
+        }
+        .kc-perf-card-series {
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .kc-perf-card-name {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            margin-bottom: 6px;
+        }
+        .kc-perf-card-tagline {
+            color: var(--kc-gold);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .kc-perf-card-desc {
+            color: #888;
+            font-size: 12px;
+            line-height: 1.65;
+            margin-bottom: 14px;
+        }
+        .kc-perf-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 14px;
+        }
+        .kc-perf-card-price {
+            color: var(--kc-gold);
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .kc-perf-card-btn {
+            background: transparent;
+            border: 1px solid rgba(201,162,39,0.55);
+            color: var(--kc-gold);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .kc-perf-card:hover .kc-perf-card-btn {
+            background: var(--kc-gold);
+            color: #fff;
+            border-color: var(--kc-gold);
+        }
+        .kc-perf-card-btn.kc-in-cart {
+            background: var(--kc-green);
+            border-color: var(--kc-green);
+            color: #fff;
+        }
+
+        /* ===== METHODOLOGY BLOCK (before "Elige tu plan") ===== */
+        .kc-method-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: linear-gradient(135deg, rgba(201,162,39,0.08) 0%, rgba(201,162,39,0.03) 100%);
+            border: 1px solid rgba(201,162,39,0.25);
+            border-radius: 14px;
+            padding: 28px 30px;
+        }
+        .kc-method-block-icon {
+            font-size: 32px;
+            color: var(--kc-gold);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .kc-method-block-eyebrow {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--kc-gold);
+            margin-bottom: 8px;
+        }
+        .kc-method-block-text {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.75;
+            margin: 0;
+        }
+        .kc-method-block-text strong { color: #fff; }
+        @media (max-width: 575px) {
+            .kc-method-block { flex-direction: column; gap: 12px; padding: 20px; }
+        }
+
+        /* ===== COLLECTION LABEL ===== */
+        .kc-collection-label {
+            margin-bottom: 24px;
+            padding: 14px 20px;
+            border-left: 3px solid var(--kc-gold);
+            background: rgba(201,162,39,0.05);
+            border-radius: 0 8px 8px 0;
+        }
+        .kc-collection-eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--kc-gold);
+            display: block;
+            margin-bottom: 4px;
+        }
+        .kc-collection-note {
+            color: #888;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* ===== COMPLETE PROGRAMS SECTION ===== */
+        .kc-complete-programs-header {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .kc-complete-programs-info {
+            max-width: 680px;
+            margin: 16px auto 0;
+        }
+        .kc-complete-programs-info p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.75;
+            margin-bottom: 10px;
+        }
+        .kc-complete-programs-info p strong { color: #ddd; }
+        .kc-complete-programs-note {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-style: italic;
+        }
+        .kc-complete-programs-note i { color: var(--kc-gold); margin-right: 6px; }
+        .kc-perf-grid--3col {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+        @media (max-width: 991px) { .kc-perf-grid--3col { grid-template-columns: repeat(2, 1fr) !important; } }
+        @media (max-width: 575px) { .kc-perf-grid--3col { grid-template-columns: 1fr !important; } }
+
+        /* ===== PDF DOWNLOAD BUTTON ===== */
+        .kc-pdf-dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(90deg, var(--kc-gold), #e8c84a);
+            color: #000 !important;
+            font-weight: 800;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            padding: 13px 24px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: opacity 0.2s;
+            margin: 4px;
+        }
+        .kc-pdf-dl-btn:hover { opacity: 0.88; }
+    </style>
+</head>
+<body class="black-bg">
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="#inicio" onclick="showMainContent()"><img src="assets/img/kenny/kc-logo.png" alt="Kenny Coach Team" class="kc-navbar-logo"></a>
+                        </div>
+                        <div class="main-menu f-right d-none d-xl-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="#inicio" onclick="showMainContent()" id="nav-inicio">Inicio</a></li>
+                                    <li><a href="#sobre-mi" onclick="showMainContent()" id="nav-sobre">Sobre Mí</a></li>
+                                    <li><a href="#planes" onclick="showMainContent()" id="nav-planes">Planes</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showPageSection('section-categorias')" id="nav-categorias">Entrenamiento</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showPageSection('section-transformaciones')" id="nav-transform">Transformaciones</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showPageSection('section-testimonios')" id="nav-testi">Testimonios</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showPageSection('section-galeria')" id="nav-galeria">Galería</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showPageSection('section-certificaciones')" id="nav-certificaciones">Certificaciones</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showPageSection('section-pagos')" id="nav-pagos">Pagos</a></li>
+                                    <li><a href="#contacto" onclick="showMainContent()" id="nav-contacto">Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-right d-none d-lg-flex align-items-center gap-3 f-right">
+                            <!-- CARRITO EN HEADER -->
+                            <button id="kc-header-cart-btn" class="kc-header-cart" title="Ver carrito" onclick="syncCartModal();" style="display:none;">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="kc-header-cart-count" class="kc-cart-badge">0</span>
+                            </button>
+                            <a href="#contacto" class="btn" onclick="showMainContent()">Solicitar Asesoría</a>
+                        </div>
+                        <!-- Menú móvil: dentro del flex del header para que quede alineado -->
+                        <div class="mobile_menu d-block d-xl-none kc-mobile-menu-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- ===== CONTENIDO PRINCIPAL (siempre presente, se oculta cuando hay sección activa) ===== -->
+<div id="kc-main-content">
+<main>
+    <!-- ===== HERO ===== -->
+    <div id="inicio" class="kc-hero position-relative">
+        <div class="kc-hero__bg"></div>
+        <div class="kc-hero__overlay"></div>
+        <div class="container kc-hero__content">
+            <div class="row">
+                <div class="col-xl-8 col-lg-9 col-md-11">
+                    <span class="kc-hero__tag" data-animation="fadeInLeft" data-delay="0.1s">Preparador Físico y Entrenador de Alto Rendimiento — Competición y Estética Física</span>
+                    <h1 data-animation="fadeInLeft" data-delay="0.3s">KENNY<br><span>COACH</span></h1>
+                    <p class="kc-hero__sub" data-animation="fadeInLeft" data-delay="0.5s">DISCIPLINA, ESTRATEGIA, RESULTADOS.</p>
+                    <div class="kc-hero__pillars" data-animation="fadeInLeft" data-delay="0.6s">
+                        <span class="kc-pillar-btn" data-pillar="personalizado">Entrenamiento Personalizado</span>
+                        <span class="kc-pillar-btn" data-pillar="transformacion">Transformación Física</span>
+                        <span class="kc-pillar-btn" data-pillar="resultados">Resultados Reales</span>
+                    </div>
+                    <div class="kc-hero__btns" data-animation="fadeInLeft" data-delay="0.8s">
+                        <a href="#contacto" class="kc-btn-solid">Comienza Hoy</a>
+                        <a href="#planes" class="border-btn hero-btn">Ver Planes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal de pilares -->
+    <div id="kc-pillar-modal" class="kc-modal-overlay">
+        <div class="kc-modal-box kc-pillar-modal-box">
+            <button class="kc-modal-close" onclick="document.getElementById('kc-pillar-modal').classList.remove('kc-modal-open')"><i class="fas fa-times"></i></button>
+            <div id="kc-pillar-content"></div>
+        </div>
+    </div>
+
+    <!-- ===== SOBRE KENNY COACH ===== -->
+    <section id="sobre-mi" class="about-area2 fix pb-padding pt-50 pb-80">
+        <div class="support-wrapper align-items-center">
+            <div class="right-content2">
+                <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                    <div class="kc-about-img-wrap">
+                        <div class="kc-about-carousel owl-carousel">
+                            <div class="kc-about-slide kc-about-slide--video">
+                                <video class="kc-about-single-img kc-about-video" src="assets/img/kenny/entrenamiento-video.mp4" poster="assets/img/kenny/entrenamiento-poster.jpg" muted loop playsinline preload="metadata"></video>
+                                <div class="kc-about-video-badge"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/competencia.jpeg" alt="Kenneth Sánchez López compitiendo en Classic Physique" class="kc-about-single-img"></div></div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/pose-competencia-2.jpg" alt="Kenny Coach posando en competencia de fisicoculturismo" class="kc-about-single-img"></div></div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/pose-competencia-3.jpg" alt="Kenny Coach posando en competencia de fisicoculturismo" class="kc-about-single-img"></div></div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/pose-competencia-4.jpg" alt="Kenny Coach posando en competencia de fisicoculturismo" class="kc-about-single-img"></div></div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/kenny-ronnie.jpeg" alt="Kenny Coach junto a Ronnie Coleman" class="kc-about-single-img"></div></div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/medallas-competencia.jpg" alt="Kenny Coach — medallas y reconocimientos en competencia" class="kc-about-single-img"></div></div>
+                            <div class="kc-about-slide"><div class="kc-about-img-frame"><img loading="lazy" decoding="async" src="assets/img/kenny/kenny-formal-camisa.jpg" alt="Kenny Coach — Entrenador personal profesional" class="kc-about-single-img"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-content2">
+                <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="front-text">
+                        <span class="kc-tag-label">Sobre Kenny Coach</span>
+                        <h2>Kenneth Sánchez López</h2>
+                        <p class="kc-about-role"><i class="fas fa-medal" style="color:var(--kc-gold);margin-right:8px;"></i>Preparador Físico y Entrenador de Alto Rendimiento especializado en competición y estética física</p>
+
+                        <p>Soy preparador y educador físico, entrenador en alto rendimiento y atleta activo de fisiculturismo en la categoría <strong style="color:var(--kc-gold)">Classic Physique</strong>. Desde hace más de 10 años he dedicado mi vida a ayudar a las personas a transformar su condición física mediante entrenamiento personalizado, disciplina y estrategias respaldadas por la experiencia como <strong style="color:var(--kc-gold)">entrenador profesional</strong>.</p>
+
+                        <p>Me especializo en la preparación para competiciones de fisiculturismo y estética, desarrollo de fuerza y potencia, ganancia de masa muscular, reducción de grasa corporal, mejora del rendimiento deportivo y acondicionamiento físico. Además, cuento con amplia experiencia como instructor de entrenamiento funcional, Cardio Dance y ciclismo de interiores.</p>
+
+                        <p class="mb-40">A lo largo de mi trayectoria he diseñado más de <strong style="color:var(--kc-gold)">3.000 planes de entrenamiento completamente personalizados</strong>, adaptados a las necesidades y objetivos de cada persona. Creo firmemente que no existen fórmulas universales; cada transformación comienza con un plan creado específicamente para quien decide dar el primer paso.</p>
+
+                        <ul class="kc-about-list">
+                            <li>Preparador físico y entrenador de alto rendimiento especializado en competición y estética física</li>
+                            <li>Atleta activo de fisiculturismo — Classic Physique</li>
+                            <li>Entrenamientos 100% personalizados</li>
+                            <li>Acompañamiento para principiantes y avanzados</li>
+                            <li>Instructor funcional, Cardio Dance y ciclismo indoor</li>
+                            <li>Enfoque en disciplina, constancia y resultados sostenibles</li>
+                        </ul>
+                        <p class="kc-about-cierre">"Tu objetivo se convierte en mi compromiso, y tu transformación será el resultado de trabajar juntos."</p>
+                        <a href="#planes" class="border-btn">Ver Planes de Entrenamiento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLANES ===== -->
+    <section id="planes" class="pricing-area section-padding40 fix">
+        <div class="container">
+            <!-- Bloque metodología 4 fases -->
+            <div class="row justify-content-center mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                <div class="col-lg-10">
+                    <div class="kc-method-block">
+                        <div class="kc-method-block-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="kc-method-block-body">
+                            <div class="kc-method-block-eyebrow">Metodología Exclusiva</div>
+                            <p class="kc-method-block-text">Todos nuestros planes son 100&nbsp;% personalizados y se desarrollan mediante una metodología exclusiva de <strong>4 fases estratégicas (20 semanas de trabajo)</strong>. Cada fase cumple un objetivo específico para garantizar una progresión inteligente, segura y sostenible. Gracias a este sistema, los clientes comienzan a notar resultados desde las primeras semanas y logran una transformación física mucho más sólida al completar el proceso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                        <span class="kc-tag-label">Planes de Entrenamiento</span>
+                        <h2>Elige Tu Plan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row kc-plans-row">
+                <!-- Plan Básico -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div class="kc-plan-card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="kc-plan-name">Plan Básico</div>
+                        <div class="kc-plan-price-dual">
+                            <span class="kc-price-crc">&#x20A1;25,000</span>
+                            <span class="kc-price-sep">·</span>
+                            <span class="kc-price-usd">$50 <small>USD</small></span>
+                        </div>
+                        <p class="kc-plan-desc">Perfecto para iniciar en el fitness</p>
+                        <ul class="kc-plan-features">
+                            <li>Rutina personalizada en PDF interactivo</li>
+                            <li>Videos explicativos integrados</li>
+                            <li>Canal de consultas por WhatsApp</li>
+                            <li>Plan adaptado al objetivo del cliente</li>
+                        </ul>
+                        <button class="kc-plan-btn kc-add-cart-btn" data-plan="Plan Básico" data-price-crc="25000" data-price-usd="50">
+                            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Plan Seguimiento (featured) -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div class="kc-plan-card kc-featured wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="kc-plan-ribbon">&#11088; Recomendado</div>
+                        <div class="kc-plan-name">Plan Seguimiento</div>
+                        <div class="kc-plan-price-dual">
+                            <span class="kc-price-crc">&#x20A1;35,000</span>
+                            <span class="kc-price-sep">·</span>
+                            <span class="kc-price-usd">$80 <small>USD</small></span>
+                        </div>
+                        <p class="kc-plan-desc">Ideal para avanzar sin estancarte</p>
+                        <ul class="kc-plan-features">
+                            <li>Rutina personalizada</li>
+                            <li>Aplicación digital</li>
+                            <li>Seguimiento y ajustes semanales</li>
+                            <li>Resolución de dudas prioritaria</li>
+                            <li>Control detallado de tu progreso</li>
+                            <li>Entrenamiento por fases estratégicas y puntuales</li>
+                        </ul>
+                        <button class="kc-plan-btn kc-add-cart-btn" data-plan="Plan Seguimiento" data-price-crc="35000" data-price-usd="80">
+                            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Plan Premium -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div class="kc-plan-card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        <div class="kc-plan-ribbon kc-ribbon-dark">&#128081; Premium</div>
+                        <div class="kc-plan-name">Plan Premium</div>
+                        <div class="kc-plan-price-dual">
+                            <span class="kc-price-crc">&#x20A1;65,000</span>
+                            <span class="kc-price-sep">·</span>
+                            <span class="kc-price-usd">$140 <small>USD</small></span>
+                        </div>
+                        <p class="kc-plan-desc">La experiencia completa Kenny Coach</p>
+                        <ul class="kc-plan-features">
+                            <li>Todo el Plan Seguimiento</li>
+                            <li>Plan nutricional elaborado bajo la guía de una profesional en nutrición</li>
+                            <li>Análisis técnico mediante videos</li>
+                            <li>Revisión detallada del progreso</li>
+                            <li>Videollamada semanal</li>
+                            <li><strong style="color:var(--kc-gold)">&#127873; Camiseta oficial de regalo</strong></li>
+                        </ul>
+                        <button class="kc-plan-btn kc-add-cart-btn" data-plan="Plan Premium" data-price-crc="65000" data-price-usd="140">
+                            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== RUTINAS DIGITALES — KENNY COACH PERFORMANCE SERIES ===== -->
+            <div class="kc-digital-section mt-60">
+
+                <!-- Header de la serie -->
+                <div class="kc-perf-series-header">
+                    <div class="kc-perf-series-eyebrow">Kenny Coach · Colección Exclusiva</div>
+                    <h3 class="kc-perf-series-title">KENNY COACH <span>PERFORMANCE SERIES</span></h3>
+                    <p class="kc-perf-series-sub">Programas digitales de élite diseñados por Kenny Coach. Descarga instantánea en PDF. Cada rutina, una experiencia de entrenamiento.</p>
+                </div>
+
+                <!-- ===== COLECCIÓN (6 programas) ===== -->
+                <div class="kc-collection-label">
+                    <span class="kc-collection-eyebrow"><i class="fas fa-layer-group"></i> Colección</span>
+                    <p class="kc-collection-note">Programas individuales de zona muscular específica.</p>
+                </div>
+                <div class="kc-perf-grid">
+
+                    <!-- Glúteos de Titanio -->
+                    <div class="kc-perf-card kc-add-cart-btn" data-plan="Glúteos de Titanio" data-price-crc="7500" data-price-usd="15" data-pdf="gluteos-de-titanio">
+                        <div class="kc-perf-card-header">
+                            <div class="kc-perf-card-bg" style="background-image:url(assets/img/kenny/transformacion.jpeg);"></div>
+                            <div class="kc-perf-card-overlay"></div>
+                            <span class="kc-perf-card-badge">Nivel Intermedio</span>
+                            <i class="fas fa-fire kc-perf-card-icon"></i>
+                        </div>
+                        <div class="kc-perf-card-body">
+                            <div class="kc-perf-card-series">Performance Series · Colección #01</div>
+                            <div class="kc-perf-card-name">GLÚTEOS DE TITANIO</div>
+                            <div class="kc-perf-card-tagline">Fuerza · Volumen · Definición</div>
+                            <div class="kc-perf-card-desc">Programa enfocado en desarrollar fuerza explosiva, volumen y definición en glúteos. Activación progresiva y técnica de élite.</div>
+                            <div class="kc-perf-card-footer">
+                                <span class="kc-perf-card-price">$15 <small style="font-size:12px;color:#888;font-weight:400;">USD</small></span>
+                                <button class="kc-perf-card-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Espalda de Acero -->
+                    <div class="kc-perf-card kc-add-cart-btn" data-plan="Espalda de Acero" data-price-crc="5000" data-price-usd="10" data-pdf="espalda-de-acero">
+                        <div class="kc-perf-card-header">
+                            <div class="kc-perf-card-bg" style="background-image:url(assets/img/kenny/kenny-ronnie.jpeg); background-position: top center;"></div>
+                            <div class="kc-perf-card-overlay"></div>
+                            <span class="kc-perf-card-badge">Nivel Avanzado</span>
+                            <i class="fas fa-dumbbell kc-perf-card-icon"></i>
+                        </div>
+                        <div class="kc-perf-card-body">
+                            <div class="kc-perf-card-series">Performance Series · Colección #02</div>
+                            <div class="kc-perf-card-name">ESPALDA DE ACERO</div>
+                            <div class="kc-perf-card-tagline">Amplitud · Grosor · Definición</div>
+                            <div class="kc-perf-card-desc">Construye una espalda ancha, gruesa y visualmente dominante. Periodización inteligente para resultados sostenidos.</div>
+                            <div class="kc-perf-card-footer">
+                                <span class="kc-perf-card-price">$10 <small style="font-size:12px;color:#888;font-weight:400;">USD</small></span>
+                                <button class="kc-perf-card-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pecho de Hierro -->
+                    <div class="kc-perf-card kc-add-cart-btn" data-plan="Pecho de Hierro" data-price-crc="5000" data-price-usd="10" data-pdf="pecho-de-hierro">
+                        <div class="kc-perf-card-header">
+                            <div class="kc-perf-card-bg" style="background-image:url(assets/img/kenny/entrenamiento-poster.jpg);"></div>
+                            <div class="kc-perf-card-overlay"></div>
+                            <span class="kc-perf-card-badge">Nivel Intermedio</span>
+                            <i class="fas fa-shield-alt kc-perf-card-icon"></i>
+                        </div>
+                        <div class="kc-perf-card-body">
+                            <div class="kc-perf-card-series">Performance Series · Colección #03</div>
+                            <div class="kc-perf-card-name">PECHO DE HIERRO</div>
+                            <div class="kc-perf-card-tagline">Fuerza · Volumen · Contorno</div>
+                            <div class="kc-perf-card-desc">Fuerza explosiva y volumen real en pectoral. Técnica de sobrecarga progresiva para desarrollar una musculatura sólida y definida.</div>
+                            <div class="kc-perf-card-footer">
+                                <span class="kc-perf-card-price">$10 <small style="font-size:12px;color:#888;font-weight:400;">USD</small></span>
+                                <button class="kc-perf-card-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Piernas de Élite -->
+                    <div class="kc-perf-card kc-add-cart-btn" data-plan="Piernas de Élite" data-price-crc="6000" data-price-usd="12" data-pdf="piernas-de-elite">
+                        <div class="kc-perf-card-header">
+                            <div class="kc-perf-card-bg" style="background-image:url(assets/img/kenny/competencia.jpeg); background-position: top center;"></div>
+                            <div class="kc-perf-card-overlay"></div>
+                            <span class="kc-perf-card-badge">Nivel Avanzado</span>
+                            <i class="fas fa-bolt kc-perf-card-icon"></i>
+                        </div>
+                        <div class="kc-perf-card-body">
+                            <div class="kc-perf-card-series">Performance Series · Colección #04</div>
+                            <div class="kc-perf-card-name">PIERNAS DE ÉLITE</div>
+                            <div class="kc-perf-card-tagline">Fuerza · Potencia · Desarrollo Completo</div>
+                            <div class="kc-perf-card-desc">Cuádriceps, femoral y gemelos trabajados con inteligencia. Desarrollo completo del tren inferior para resultados de competencia.</div>
+                            <div class="kc-perf-card-footer">
+                                <span class="kc-perf-card-price">$12 <small style="font-size:12px;color:#888;font-weight:400;">USD</small></span>
+                                <button class="kc-perf-card-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hombros de Titán -->
+                    <div class="kc-perf-card kc-add-cart-btn" data-plan="Hombros de Titán" data-price-crc="5000" data-price-usd="10" data-pdf="hombros-de-titan">
+                        <div class="kc-perf-card-header">
+                            <div class="kc-perf-card-bg" style="background-image:url(assets/img/kenny/hero-kenny.jpeg); background-position: top center;"></div>
+                            <div class="kc-perf-card-overlay"></div>
+                            <span class="kc-perf-card-badge">Nivel Intermedio</span>
+                            <i class="fas fa-medal kc-perf-card-icon"></i>
+                        </div>
+                        <div class="kc-perf-card-body">
+                            <div class="kc-perf-card-series">Performance Series · Colección #05</div>
+                            <div class="kc-perf-card-name">HOMBROS DE TITÁN</div>
+                            <div class="kc-perf-card-tagline">Deltoide 360° · Anchura · Forma</div>
+                            <div class="kc-perf-card-desc">Deltoides anterior, lateral y posterior trabajados en equilibrio. La anchura y la forma que definen una silueta atlética y dominante.</div>
+                            <div class="kc-perf-card-footer">
+                                <span class="kc-perf-card-price">$10 <small style="font-size:12px;color:#888;font-weight:400;">USD</small></span>
+                                <button class="kc-perf-card-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brazos de Combate -->
+                    <div class="kc-perf-card kc-add-cart-btn" data-plan="Brazos de Combate" data-price-crc="6000" data-price-usd="12" data-pdf="brazos-de-combate">
+                        <div class="kc-perf-card-header">
+                            <div class="kc-perf-card-bg" style="background-image:url(assets/img/kenny/clase-grupal.jpeg);"></div>
+                            <div class="kc-perf-card-overlay"></div>
+                            <span class="kc-perf-card-badge">Nivel Intermedio</span>
+                            <i class="fas fa-fist-raised kc-perf-card-icon"></i>
+                        </div>
+                        <div class="kc-perf-card-body">
+                            <div class="kc-perf-card-series">Performance Series · Colección #06</div>
+                            <div class="kc-perf-card-name">BRAZOS DE COMBATE</div>
+                            <div class="kc-perf-card-tagline">Bíceps · Tríceps · Definición Máxima</div>
+                            <div class="kc-perf-card-desc">Bíceps y tríceps desarrollados con técnica de élite. Volumen, pico y definición para unos brazos que destacan en cualquier posición.</div>
+                            <div class="kc-perf-card-footer">
+                                <span class="kc-perf-card-price">$12 <small style="font-size:12px;color:#888;font-weight:400;">USD</small></span>
+                                <button class="kc-perf-card-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== PROGRAMAS COMPLETOS — DISEÑO PREMIUM ===== -->
+                <div class="kc-prog-section-header mt-60">
+                    <span class="kc-prog-eyebrow"><i class="fas fa-scroll" style="margin-right:6px;"></i>Programas Completos<br class="kc-prog-eyebrow-break">Push–Pull–Legs</span>
+                    <h3 class="kc-prog-title">Elige Tu <span style="color:var(--kc-gold);">Objetivo</span></h3>
+                    <p class="kc-prog-subtitle">Programas completos de 3 disciplinas diseñados para el gimnasio. Metodología Push–Pull–Legs. Nivel intermedio–avanzado. Descarga PDF al instante.</p>
+                </div>
+
+                <!-- Anuncio: Promo con contador -->
+                <div class="kc-prog-promo-banner" id="kc-prog-promo-banner">
+                    <div class="kc-prog-promo-glow"></div>
+                    <div class="kc-prog-promo-left">
+                        <div class="kc-prog-promo-badge"><span class="kc-prog-promo-dot"></span><i class="fas fa-bolt"></i> Oferta por tiempo limitado</div>
+                        <div class="kc-prog-promo-headline">
+                            <span class="kc-prog-promo-percent">50% OFF</span>
+                            <span class="kc-prog-promo-text">En cada programa &mdash; Primeras 10 Personas/Habilitado el 15 de agosto</span>
+                        </div>
+                    </div>
+                    <div class="kc-prog-promo-divider"></div>
+                    <div class="kc-prog-promo-right">
+                        <span class="kc-prog-promo-countdown-label"><i class="fas fa-clock"></i> Habilitado en</span>
+                        <div class="kc-prog-promo-countdown" id="kc-prog-countdown">
+                            <div class="kc-prog-cd-unit"><span class="kc-prog-cd-num" id="kc-cd-days">00</span><span class="kc-prog-cd-label">Días</span></div>
+                            <span class="kc-prog-cd-sep">:</span>
+                            <div class="kc-prog-cd-unit"><span class="kc-prog-cd-num" id="kc-cd-hours">00</span><span class="kc-prog-cd-label">Hrs</span></div>
+                            <span class="kc-prog-cd-sep">:</span>
+                            <div class="kc-prog-cd-unit"><span class="kc-prog-cd-num" id="kc-cd-mins">00</span><span class="kc-prog-cd-label">Min</span></div>
+                            <span class="kc-prog-cd-sep">:</span>
+                            <div class="kc-prog-cd-unit"><span class="kc-prog-cd-num" id="kc-cd-secs">00</span><span class="kc-prog-cd-label">Seg</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Recordatorio por correo -->
+                    <div class="kc-prog-promo-remind">
+                        <button type="button" class="kc-remind-btn" id="kc-remind-open-btn">
+                            <i class="fas fa-bell"></i> Avísame cuando se habilite
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal: recordatorio por correo -->
+                <div class="kc-remind-overlay" id="kc-remind-overlay">
+                    <div class="kc-remind-modal" role="dialog" aria-modal="true" aria-labelledby="kc-remind-title">
+                        <button type="button" class="kc-remind-close" id="kc-remind-close-btn" aria-label="Cerrar">&times;</button>
+
+                        <div class="kc-remind-body" id="kc-remind-form-view">
+                            <div class="kc-remind-icon"><i class="fas fa-bell"></i></div>
+                            <h4 class="kc-remind-title" id="kc-remind-title">No te quedes fuera del 50% OFF</h4>
+                            <p class="kc-remind-sub">Déjanos tu correo y te avisamos apenas se habilite la oferta el 15 de agosto. Cupo limitado a las primeras 10 personas.</p>
+
+                            <form name="recordatorio-oferta" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="kc-remind-form">
+                                <input type="hidden" name="form-name" value="recordatorio-oferta">
+                                <p class="kc-remind-hp"><label>No llenar: <input name="bot-field"></label></p>
+
+                                <div class="kc-remind-field">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" id="kc-remind-email" placeholder="tu@correo.com" required>
+                                </div>
+                                <button type="submit" class="kc-remind-submit" id="kc-remind-submit-btn">Quiero que me avisen</button>
+                                <p class="kc-remind-error" id="kc-remind-error">Por favor ingresa un correo válido.</p>
+                            </form>
+                        </div>
+
+                        <div class="kc-remind-body kc-remind-success" id="kc-remind-success-view" hidden>
+                            <div class="kc-remind-icon kc-remind-icon--ok"><i class="fas fa-check"></i></div>
+                            <h4 class="kc-remind-title">¡Listo, quedaste anotado!</h4>
+                            <p class="kc-remind-sub">Te escribiremos a tu correo apenas se habilite el 50% OFF el 15 de agosto.</p>
+                            <button type="button" class="kc-remind-submit" id="kc-remind-close-btn2">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de 3 programas premium -->
+                <div class="kc-prog-grid">
+
+                    <!-- MASA BESTIAL — Naranja/Fuego -->
+                    <div class="kc-prog-card kc-prog-card--masa kc-add-cart-btn"
+                         data-plan="Masa Bestial" data-price-crc="25000" data-price-usd="50" data-pdf="masa-bestial"
+                         role="button" tabindex="0">
+                        <!-- Dificultad -->
+                        <div class="kc-prog-difficulty">
+                            <span class="kc-prog-diff-label">Intensidad</span>
+                            <div class="kc-prog-diff-dots">
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                            </div>
+                        </div>
+                        <!-- Foto de fondo -->
+                        <div class="kc-prog-card-bg" style="background-image:url(assets/img/kenny/kenny-spartan-gym.png); background-position: top center;"></div>
+                        <div class="kc-prog-card-overlay"></div>
+                        <!-- Contenido -->
+                        <div class="kc-prog-card-content">
+                            <div class="kc-prog-type-badge"><i class="fas fa-fire"></i> Incremento de Masa</div>
+                            <div class="kc-prog-card-name">MASA BESTIAL</div>
+                            <span class="kc-prog-card-name-line"></span>
+                            <p class="kc-prog-card-desc">Sobrecarga progresiva y volumen elevado para maximizar el crecimiento muscular en cuerpo completo. El programa más intenso de la colección.</p>
+                            <div class="kc-prog-pills">
+                                <span class="kc-prog-pill">PPL Split</span>
+                                <span class="kc-prog-pill">Volumen Total</span>
+                                <span class="kc-prog-pill">Fuerza Bruta</span>
+                                <span class="kc-prog-pill">6 días/sem</span>
+                            </div>
+                            <div class="kc-prog-card-footer">
+                                <div class="kc-prog-price-block">
+                                    <span class="kc-prog-price-crc">&#x20A1;25,000</span>
+                                    <span class="kc-prog-price-usd">$50 USD</span>
+                                </div>
+                                <button class="kc-prog-cta-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODO DEFINICIÓN TOTAL — Azul -->
+                    <div class="kc-prog-card kc-prog-card--grasa kc-add-cart-btn"
+                         data-plan="Modo Definición Total" data-price-crc="20000" data-price-usd="40" data-pdf="modo-definicion-total"
+                         role="button" tabindex="0">
+                        <!-- Dificultad -->
+                        <div class="kc-prog-difficulty">
+                            <span class="kc-prog-diff-label">Intensidad</span>
+                            <div class="kc-prog-diff-dots">
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot"></div>
+                            </div>
+                        </div>
+                        <!-- Foto de fondo -->
+                        <div class="kc-prog-card-bg" style="background-image:url(assets/img/kenny/kenny-competicion-ifbb.jpg); background-position: top center;"></div>
+                        <div class="kc-prog-card-overlay"></div>
+                        <!-- Contenido -->
+                        <div class="kc-prog-card-content">
+                            <div class="kc-prog-type-badge"><i class="fas fa-heartbeat"></i> Pérdida de Grasa</div>
+                            <div class="kc-prog-card-name">MODO DEFINICIÓN TOTAL</div>
+                            <span class="kc-prog-card-name-line"></span>
+                            <p class="kc-prog-card-desc">Alta intensidad para quemar grasa, mantener músculo y revelar definición máxima. Diseñado para quienes buscan el cuerpo más estético posible.</p>
+                            <div class="kc-prog-pills">
+                                <span class="kc-prog-pill">PPL Split</span>
+                                <span class="kc-prog-pill">Alta Intensidad</span>
+                                <span class="kc-prog-pill">Density Training</span>
+                                <span class="kc-prog-pill">5-6 días/sem</span>
+                            </div>
+                            <div class="kc-prog-card-footer">
+                                <div class="kc-prog-price-block">
+                                    <span class="kc-prog-price-crc">&#x20A1;20,000</span>
+                                    <span class="kc-prog-price-usd">$40 USD</span>
+                                </div>
+                                <button class="kc-prog-cta-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RECOMPOSICIÓN IMPERIAL — Dorado -->
+                    <div class="kc-prog-card kc-prog-card--recomp kc-add-cart-btn"
+                         data-plan="Recomposición Imperial" data-price-crc="20000" data-price-usd="40" data-pdf="recomposicion-imperial"
+                         role="button" tabindex="0">
+                        <!-- Dificultad -->
+                        <div class="kc-prog-difficulty">
+                            <span class="kc-prog-diff-label">Intensidad</span>
+                            <div class="kc-prog-diff-dots">
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot filled"></div>
+                                <div class="kc-prog-diff-dot"></div>
+                            </div>
+                        </div>
+                        <!-- Foto de fondo -->
+                        <div class="kc-prog-card-bg" style="background-image:url(assets/img/kenny/kenny-flexing.png); background-position: top center;"></div>
+                        <div class="kc-prog-card-overlay"></div>
+                        <!-- Contenido -->
+                        <div class="kc-prog-card-content">
+                            <div class="kc-prog-type-badge"><i class="fas fa-balance-scale"></i> Recomposición Corporal</div>
+                            <div class="kc-prog-card-name">RECOMPOSICIÓN IMPERIAL</div>
+                            <span class="kc-prog-card-name-line"></span>
+                            <p class="kc-prog-card-desc">El programa dual definitivo: gana músculo y pierde grasa al mismo tiempo. Estrategia metabólica inteligente para transformar el cuerpo por completo.</p>
+                            <div class="kc-prog-pills">
+                                <span class="kc-prog-pill">PPL Split</span>
+                                <span class="kc-prog-pill">Fuerza + Cardio</span>
+                                <span class="kc-prog-pill">Metabólico</span>
+                                <span class="kc-prog-pill">5-6 días/sem</span>
+                            </div>
+                            <div class="kc-prog-card-footer">
+                                <div class="kc-prog-price-block">
+                                    <span class="kc-prog-price-crc">&#x20A1;20,000</span>
+                                    <span class="kc-prog-price-usd">$40 USD</span>
+                                </div>
+                                <button class="kc-prog-cta-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /kc-prog-grid -->
+
+                <p style="text-align:center;color:#555;font-size:12px;margin-bottom:0;" class="kc-complete-programs-note"><i class="fas fa-info-circle" style="color:var(--kc-gold);margin-right:6px;"></i>Programas prediseñados para gimnasio. Sin modificaciones individuales. Para adaptaciones, elegí un <a href="#planes" style="color:var(--kc-gold);">plan personalizado</a>.</p>
+
+                                <!-- Ofertas de la semana — DISEÑO PREMIUM V2 -->
+                <div class="kc-deals-section">
+                    <div class="kc-deals-header">
+                        <div>
+                            <span class="kc-deals-eyebrow"><i class="fas fa-bolt"></i>&nbsp; Ofertas de la Semana</span>
+                        </div>
+                        <h3 class="kc-deals-title">Ahorrá más, <span>entrenás más</span></h3>
+                        <p class="kc-deals-sub">Packs seleccionados con precio especial. Tiempo limitado.</p>
+                    </div>
+
+                    <div class="kc-deals-grid">
+
+                        <!-- Deal 1: Tren Superior -->
+                        <div class="kc-deal-card kc-deal-card--fire">
+                            <div class="kc-deal-stripe"></div>
+                            <div class="kc-deal-body">
+                                <div class="kc-deal-badge"><i class="fas fa-fire"></i> Oferta de la Semana</div>
+                                <div class="kc-deal-name">Pack Tren Superior Completo</div>
+                                <div class="kc-deal-desc">4 programas de zona superior en un solo PDF. El paquete más vendido de la colección.</div>
+                                <ul class="kc-deal-includes">
+                                    <li>Pecho de Hierro</li>
+                                    <li>Espalda de Acero</li>
+                                    <li>Hombros de Titán</li>
+                                    <li>Brazos de Combate</li>
+                                </ul>
+                                <div class="kc-deal-pricing">
+                                    <span class="kc-deal-old-price">$42</span>
+                                    <span class="kc-deal-new-price">$28<small> USD</small></span>
+                                    <span class="kc-deal-saving">Ahorrás $14</span>
+                                </div>
+                                <button class="kc-deal-btn kc-plan-btn kc-add-cart-btn"
+                                    data-plan="Pack Tren Superior Completo"
+                                    data-price-crc="14000"
+                                    data-price-usd="28"
+                                    data-pdf="pecho-de-hierro,espalda-de-acero,hombros-de-titan,brazos-de-combate">
+                                    <i class="fas fa-cart-plus"></i> Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Deal 2: Glúteos + Piernas -->
+                        <div class="kc-deal-card kc-deal-card--star">
+                            <div class="kc-deal-stripe"></div>
+                            <div class="kc-deal-body">
+                                <div class="kc-deal-badge"><i class="fas fa-star"></i> Oferta Especial</div>
+                                <div class="kc-deal-name">Glúteos de Titanio + Piernas de Élite</div>
+                                <div class="kc-deal-desc">El combo perfecto para tren inferior. Resultados visibles desde las primeras semanas.</div>
+                                <ul class="kc-deal-includes">
+                                    <li>Glúteos de Titanio</li>
+                                    <li>Piernas de Élite</li>
+                                    <li>PDF combinado descargable</li>
+                                </ul>
+                                <div class="kc-deal-pricing">
+                                    <span class="kc-deal-old-price">$27</span>
+                                    <span class="kc-deal-new-price">$22<small> USD</small></span>
+                                    <span class="kc-deal-saving">Ahorrás $5</span>
+                                </div>
+                                <button class="kc-deal-btn kc-plan-btn kc-add-cart-btn"
+                                    data-plan="Glúteos de Titanio + Piernas de Élite"
+                                    data-price-crc="11000"
+                                    data-price-usd="22"
+                                    data-pdf="gluteos-de-titanio,piernas-de-elite">
+                                    <i class="fas fa-cart-plus"></i> Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Deal 3: Pack Colección Completa -->
+                        <div class="kc-deal-card kc-deal-card--crown">
+                            <div class="kc-deal-stripe"></div>
+                            <div class="kc-deal-body">
+                                <div class="kc-deal-badge"><i class="fas fa-crown"></i> Pack Colección</div>
+                                <div class="kc-deal-name">Pack Colección — 6 Programas</div>
+                                <div class="kc-deal-desc">La colección Performance Series completa. Todo lo que necesitás para trabajar cada zona muscular al máximo nivel.</div>
+                                <ul class="kc-deal-includes">
+                                    <li>Glúteos, Espalda, Pecho</li>
+                                    <li>Piernas, Hombros, Brazos</li>
+                                    <li>6 PDFs en un solo pack</li>
+                                    <li style="color:#888;font-size:11px;font-style:italic;">Nivel intermedio–avanzado</li>
+                                </ul>
+                                <div class="kc-deal-pricing">
+                                    <span class="kc-deal-old-price">$69</span>
+                                    <span class="kc-deal-new-price">$45<small> USD</small></span>
+                                    <span class="kc-deal-saving">Ahorrás $24</span>
+                                </div>
+                                <button class="kc-deal-btn kc-plan-btn kc-add-cart-btn"
+                                    data-plan="Pack Colección Completa"
+                                    data-price-crc="22500"
+                                    data-price-usd="45"
+                                    data-pdf="gluteos-de-titanio,espalda-de-acero,pecho-de-hierro,piernas-de-elite,hombros-de-titan,brazos-de-combate">
+                                    <i class="fas fa-cart-plus"></i> Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+
+                    </div><!-- /kc-deals-grid -->
+                </div><!-- /kc-deals-section -->
+
+                                <!-- Aviso de uso y alcance de las rutinas (antes y después de la compra) -->
+                <div class="kc-perf-disclaimer">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Las rutinas de <strong>Kenny Coach Performance Series</strong> han sido diseñadas exclusivamente para entrenamiento en gimnasio. Al tratarse de programas prediseñados, no contemplan modificaciones individuales. Si necesitas adaptaciones, cambios de ejercicios o seguimiento personalizado, elige uno de nuestros <a href="#planes">planes de acompañamiento</a>.</p>
+                </div>
+
+            </div>
+
+            <!-- Cart Bar -->
+            <div id="kc-cart-bar" class="kc-cart-bar" style="display:none;">
+                <div class="kc-cart-bar-inner">
+                    <div class="kc-cart-info">
+                        <i class="fas fa-shopping-cart kc-cart-icon"></i>
+                        <span>Plan: <strong id="kc-cart-name"></strong></span>
+                        <span class="kc-cart-price">&#x20A1;<span id="kc-cart-crc"></span> &nbsp;/&nbsp; $<span id="kc-cart-usd"></span> USD</span>
+                    </div>
+                    <div class="kc-cart-actions">
+                        <button id="kc-checkout-btn" class="kc-btn-checkout"><i class="fas fa-credit-card"></i> Ir a Pagar</button>
+                        <button id="kc-cart-remove" class="kc-btn-remove" title="Eliminar"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="kc-contact-section kc-section-pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <span class="kc-tag-label">Contacto</span>
+                    <h2 style="color:#fff;font-size:36px;font-weight:700;margin-bottom:15px;">Comienza Tu Transformación Hoy</h2>
+                    <p style="color:#999;margin-bottom:10px;">Escríbeme y conversemos sobre tus objetivos, sin compromiso.</p>
+                </div>
+            </div>
+            <div class="kc-contact-btns">
+                <a href="https://wa.me/50662036881?text=Buenas%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20coach." target="_blank" class="kc-contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/coach_kenny_s" target="_blank" class="kc-contact-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.tiktok.com/@kenny.coachs" target="_blank" class="kc-contact-btn">
+                    <svg class="kc-tiktok-icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.9a210.1,210.1,0,0,1-122.8-39.3V349.4A162.6,162.6,0,1,1,185,188.3V278a74.6,74.6,0,1,0,52.2,71.2V0h68.9a121.2,121.2,0,0,0,1.9,22.2h0A122.2,122.2,0,0,0,381,102.4a121.4,121.4,0,0,0,67,20.1Z"/></svg> TikTok
+                </a>
+                <a href="https://www.facebook.com/kenneth.sanchez.946" target="_blank" class="kc-contact-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="mailto:info@kennycoachteam.com" class="kc-contact-btn"><i class="fas fa-envelope"></i> info@kennycoachteam.com</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-area black-bg">
+        <div class="container">
+            <div class="footer-top footer-padding">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="single-footer-caption mb-50 text-center">
+                            <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                <h3 style="color:#fff;font-weight:800;letter-spacing:1px;">KENNY COACH TEAM</h3>
+                                <p class="kc-footer-tagline">Entrenamiento Personalizado · Transformación Física</p>
+                                <img loading="lazy" decoding="async" src="assets/img/kenny/firma-kenny-coach.jpeg" alt="Firma Kenny Coach" class="kc-footer-signature">
+                            </div>
+                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                                <div class="main-header main-header2">
+                                    <div class="menu-wrapper menu-wrapper2">
+                                        <div class="main-menu main-menu2 text-center">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="#inicio" onclick="showMainContent()">Inicio</a></li>
+                                                    <li><a href="#sobre-mi" onclick="showMainContent()">Sobre Kenny Coach</a></li>
+                                                    <li><a href="#planes" onclick="showMainContent()">Planes</a></li>
+                                                    <li><a href="#contacto" onclick="showMainContent()">Contacto</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
+                                <a href="https://wa.me/50662036881?text=Buenas%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20coach." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/coach_kenny_s" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@kenny.coachs" target="_blank"><svg class="kc-tiktok-icon kc-tiktok-icon--footer" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.9a210.1,210.1,0,0,1-122.8-39.3V349.4A162.6,162.6,0,1,1,185,188.3V278a74.6,74.6,0,1,0,52.2,71.2V0h68.9a121.2,121.2,0,0,0,1.9,22.2h0A122.2,122.2,0,0,0,381,102.4a121.4,121.4,0,0,0,67,20.1Z"/></svg></a>
+                                <a href="https://www.facebook.com/kenneth.sanchez.946" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-12">
+                        <div class="footer-copy-right text-center">
+                            <p>Kenny Coach Team — Entrenamiento Personalizado — Transformación Física.<br>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div><!-- /#kc-main-content -->
+
+<div id="back-top">
+    <a title="Ir arriba" href="#inicio" onclick="showMainContent()"><i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- ============================================================ -->
+<!-- ===== SECCIONES EN PÁGINA (reemplazan los modales) ===== -->
+<!-- ============================================================ -->
+
+<!-- SECCIÓN: ENTRENAMIENTO / CATEGORÍAS -->
+<div id="section-categorias" class="kc-page-section black-bg">
+    <div style="min-height:80px;"></div>
+
+    <!-- Categorías hero -->
+    <section class="traning-categories black-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img kc-topic-media">
+                            <video class="kc-topic-video" src="assets/img/kenny/entrenamiento-video.mp4" poster="assets/img/kenny/entrenamiento-poster.jpg" preload="metadata" autoplay muted loop playsinline></video>
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3>Entrenamiento Personal</h3>
+                                    <p>Rutinas diseñadas a tu medida, con seguimiento real de tu progreso <br>y ajustes constantes según tus resultados.</p>
+                                    <a href="#planes" class="border-btn" onclick="showMainContent()">Ver Planes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img kc-topic-media">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/kenny-ronnie.jpeg" alt="Kenny Coach junto a Ronnie Coleman" class="kc-topic-photo-top">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3>Transformación Física</h3>
+                                    <p>Disciplina, constancia y un plan claro. Así se logran los <br>cambios físicos que perduran en el tiempo.</p>
+                                    <a href="javascript:void(0)" class="btn" onclick="showPageSection('section-transformaciones')">Ver Resultados</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lo que ofrezco -->
+    <section class="team-area fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span class="kc-tag-label">Lo que ofrezco</span>
+                        <h2>Enfoque Integral de Entrenamiento</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 kc-service-card" data-service="fisico">
+                        <div class="cat-icon">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/competencia.jpeg" alt="Kenny Coach en competencia de fisicoculturismo" class="kc-service-photo">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Fisicoculturismo</h5>
+                            <p>Experiencia real como atleta activo de Classic Physique aplicada a tu entrenamiento.</p>
+                            <span class="kc-service-expand"><i class="fas fa-plus-circle"></i> Ver más</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 kc-service-card" data-service="muscular">
+                        <div class="cat-icon">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/kenny-ronnie.jpeg" alt="Kenny Coach junto a Ronnie Coleman" class="kc-service-photo">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Ganancia Muscular</h5>
+                            <p>Rutinas de fuerza e hipertrofia con progresión medible y resultados sostenidos.</p>
+                            <span class="kc-service-expand"><i class="fas fa-plus-circle"></i> Ver más</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 kc-service-card" data-service="grasa">
+                        <div class="cat-icon">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/clase-grupal.jpeg" alt="Clase grupal de entrenamiento" class="kc-service-photo">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Reducción de Grasa Corporal</h5>
+                            <p>Planes estratégicos combinando entrenamiento y hábitos para una transformación real.</p>
+                            <span class="kc-service-expand"><i class="fas fa-plus-circle"></i> Ver más</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 kc-service-card" data-service="funcional">
+                        <div class="cat-icon">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/entrenamiento-poster.jpg" alt="Entrenamiento funcional" class="kc-service-photo">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Entrenamiento Funcional</h5>
+                            <p>Cardio Dance, ciclismo de interiores y movimientos que mejoran tu desempeño diario.</p>
+                            <span class="kc-service-expand"><i class="fas fa-plus-circle"></i> Ver más</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 kc-service-card" data-service="rendimiento">
+                        <div class="cat-icon">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/hero-kenny.jpeg" alt="Alto rendimiento deportivo" class="kc-service-photo">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Alto Rendimiento Deportivo</h5>
+                            <p>Preparación para competencias y objetivos de rendimiento al siguiente nivel.</p>
+                            <span class="kc-service-expand"><i class="fas fa-plus-circle"></i> Ver más</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 kc-service-card" data-service="acondi">
+                        <div class="cat-icon">
+                            <img loading="lazy" decoding="async" src="assets/img/kenny/transformacion.jpeg" alt="Acondicionamiento físico general" class="kc-service-photo">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Acondicionamiento Físico</h5>
+                            <p>Para quienes buscan mejorar su condición general, energía y calidad de vida.</p>
+                            <span class="kc-service-expand"><i class="fas fa-plus-circle"></i> Ver más</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="padding:40px 0 60px;text-align:center;">
+        <a href="#planes" class="kc-btn-solid" onclick="showMainContent()">Ver Planes de Entrenamiento</a>
+    </div>
+</div>
+
+<!-- Modal de servicios (pequeño, independiente del sistema de navegación) -->
+<div id="kc-service-modal" class="kc-modal-overlay">
+    <div class="kc-modal-box kc-service-modal-box">
+        <button class="kc-modal-close" onclick="document.getElementById('kc-service-modal').classList.remove('kc-modal-open')"><i class="fas fa-times"></i></button>
+        <div id="kc-service-content"></div>
+        <a href="#contacto" class="kc-btn-confirm-pay mt-3" onclick="document.getElementById('kc-service-modal').classList.remove('kc-modal-open'); showMainContent();">
+            <i class="fab fa-whatsapp"></i> Solicitar Asesoría
+        </a>
+    </div>
+</div>
+
+<!-- SECCIÓN: TRANSFORMACIONES -->
+<div id="section-transformaciones" class="kc-page-section black-bg">
+    <div style="min-height:80px;"></div>
+    <section class="kc-transform-section kc-section-pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="kc-tag-label">Transformaciones</span>
+                    <h2 style="color:#fff;font-size:38px;font-weight:700;margin-bottom:10px;">Resultados Que Hablan Por Sí Solos</h2>
+                    <p style="color:#999;font-size:16px;max-width:600px;margin:0 auto 40px;">Detrás de cada resultado hay estrategia, ejecución correcta y compromiso. Yo lo viví en carne propia — con disciplina y constancia, los resultados llegan.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-30">
+                    <img loading="lazy" decoding="async" src="assets/img/kenny/transformacion.jpeg" alt="Transformación física - antes y después" class="kc-transform-img">
+                </div>
+                <div class="col-lg-5">
+                    <div class="kc-transform-stats">
+                        <div class="kc-stat-item">
+                            <strong>+10</strong>
+                            <span>Años de experiencia</span>
+                        </div>
+                        <div class="kc-stat-item">
+                            <strong>+3,000</strong>
+                            <span>Planes diseñados</span>
+                        </div>
+                        <div class="kc-stat-item">
+                            <strong>100%</strong>
+                            <span>Personalizados</span>
+                        </div>
+                    </div>
+                    <p style="color:#ccc;font-size:16px;line-height:1.8;margin-top:25px;">He vivido el proceso desde adentro. Sé lo que se siente empezar desde cero, mantener la disciplina y ver los cambios reales. Por eso cada plan que diseño tiene el peso de mi experiencia personal y profesional detrás.</p>
+                    <div class="kc-transform-quote">
+                        "Detrás de cada resultado real existe estrategia, ejecución correcta y compromiso."
+                    </div>
+                    <p style="color:#666;font-size:13px;font-style:italic;margin-top:20px;"><i class="fas fa-camera" style="color:var(--kc-gold);margin-right:6px;"></i> Próximamente: galería de transformaciones reales de clientes</p>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:50px;">
+                <a href="#contacto" class="kc-btn-solid" onclick="showMainContent()">Comienza Tu Transformación</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- SECCIÓN: TESTIMONIOS -->
+<div id="section-testimonios" class="kc-page-section black-bg">
+    <div style="min-height:80px;"></div>
+    <section class="kc-testimonial-section kc-section-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span class="kc-tag-label">Testimonios</span>
+                        <h2 style="color:#fff;">Lo Que Dicen Mis Clientes</h2>
+                        <p style="color:#777;font-size:14px;margin-top:10px;">Cada historia tiene detrás un plan, ejecución y compromiso real.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-testimonial-card">
+                        <div class="kc-stars">★★★★★</div>
+                        <p class="kc-quote">"Kenny Coach me ayudó a bajar de peso y ganar disciplina que nunca pensé tener. El seguimiento constante marcó la diferencia."</p>
+                        <div class="kc-testimonial-transform" onclick="showPageSection('section-transformaciones')" role="button" tabindex="0" title="Ver transformaciones">
+                            <img src="assets/img/kenny/transformacion.jpeg" alt="Transformación" class="kc-testi-transform-img">
+                            <span>Ver resultado <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="kc-testimonial-author">
+                            <div class="kc-avatar-circle">M</div>
+                            <div>
+                                <strong>María Benavides</strong>
+                                <span>Plan Personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-testimonial-card">
+                        <div class="kc-stars">★★★★★</div>
+                        <p class="kc-quote">"Entrené con Kenny Coach para mi primera competencia y su experiencia como atleta de Classic Physique se nota en cada detalle."</p>
+                        <div class="kc-testimonial-transform" onclick="showPageSection('section-transformaciones')" role="button" tabindex="0" title="Ver transformaciones">
+                            <img src="assets/img/kenny/competencia.jpeg" alt="Competencia" class="kc-testi-transform-img">
+                            <span>Ver resultado <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="kc-testimonial-author">
+                            <div class="kc-avatar-circle">R</div>
+                            <div>
+                                <strong>Ronald González</strong>
+                                <span>Plan Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-testimonial-card">
+                        <div class="kc-stars">★★★★★</div>
+                        <p class="kc-quote">"Empecé desde casa con rutinas simples y hoy entreno con mucha más confianza. Recomiendo totalmente a Kenny Coach Team."</p>
+                        <div class="kc-testimonial-transform" onclick="showPageSection('section-transformaciones')" role="button" tabindex="0" title="Ver transformaciones">
+                            <img src="assets/img/kenny/clase-grupal.jpeg" alt="Entrenamiento" class="kc-testi-transform-img">
+                            <span>Ver resultado <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="kc-testimonial-author">
+                            <div class="kc-avatar-circle">S</div>
+                            <div>
+                                <strong>Samuel Espinoza</strong>
+                                <span>Rutina en Casa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px;">
+                <a href="#contacto" class="kc-btn-solid" onclick="showMainContent()">Solicitar Mi Plan</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- SECCIÓN: GALERÍA -->
+<div id="section-galeria" class="kc-page-section black-bg">
+    <div class="kc-gallery3-section">
+        <!-- Hero header -->
+        <div class="kc-gallery3-hero">
+            <span class="kc-gallery3-eyebrow">Galería</span>
+            <h2 class="kc-gallery3-title">Entrenamiento &amp; <span>Resultados</span></h2>
+            <p class="kc-gallery3-sub">La historia se cuenta sola. Seleccioná una categoría o explorá todo.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="kc-gal3-filters">
+            <button class="kc-gal3-filter-btn active" data-filter="all">Todos</button>
+            <button class="kc-gal3-filter-btn" data-filter="personal">Kenny Coach</button>
+            <button class="kc-gal3-filter-btn" data-filter="competicion">Competición</button>
+            <button class="kc-gal3-filter-btn" data-filter="entrenando">Entrenando Clientes</button>
+            <button class="kc-gal3-filter-btn" data-filter="clientes">Con Clientes</button>
+        </div>
+
+        <!-- Grid Masonry -->
+        <div class="kc-gal3-wrap">
+            <div class="kc-gal3-grid" id="kc-gal3-grid">
+
+                <!-- COMPETICIÓN 1 - Campeonato IFBB San José -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Campeonato San José Internacional IFBB" data-src="assets/img/kenny/kenny-competicion-ifbb.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/kenny-competicion-ifbb.jpg" alt="Campeonato IFBB San José" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · IFBB</div>
+                        <div class="kc-gal3-item-caption">Campeonato San José Internacional — Fisicoculturismo +85kg</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN — Video Kenneth Sánchez López #27 -->
+                <div class="kc-gal3-item kc-gal3-item--video" data-cat="competicion" data-caption="Kenneth Sánchez López — Competencia #27" data-video="assets/img/kenny/kenny-video-27.mp4">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <video class="kc-gal3-video-thumb" src="assets/img/kenny/kenny-video-27.mp4" poster="assets/img/kenny/kenny-video-27-poster.jpg" muted loop playsinline preload="metadata"></video>
+                    <div class="kc-gal3-play-badge"><i class="fas fa-play"></i></div>
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · #27</div>
+                        <div class="kc-gal3-item-caption">Kenneth Sánchez López — Video de competencia</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 2 - Pose en escenario -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Pose Classic Physique en escenario" data-src="assets/img/kenny/competencia.jpeg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/competencia.jpeg" alt="Competencia Classic Physique" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Classic Physique</div>
+                        <div class="kc-gal3-item-caption">Pose en tarima — Classic Physique</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- PERSONAL 1 - Kenny Spartan Gym -->
+                <div class="kc-gal3-item" data-cat="personal" data-caption="Disciplina · Fuerza · Mentalidad" data-src="assets/img/kenny/kenny-spartan-gym.png">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <img src="assets/img/kenny/kenny-spartan-gym.png" alt="Kenny Coach Spartan Gym" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach</div>
+                        <div class="kc-gal3-item-caption">Disciplina · Fuerza · Mentalidad</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 1 - Clase grupal gimnasio -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Kenny con su grupo de clientes en clase grupal" data-src="assets/img/kenny/clientes-clase-grupal.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/clientes-clase-grupal.jpg" alt="Clase grupal con clientes" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Clase Grupal</div>
+                        <div class="kc-gal3-item-caption">Kenny y su equipo — Clase grupal</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- PERSONAL 2 - Retrato fuego -->
+                <div class="kc-gal3-item" data-cat="personal" data-caption="Coach Kenny — Personal Trainer" data-src="assets/img/kenny/kenny-fire-portrait.png">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <img src="assets/img/kenny/kenny-fire-portrait.png" alt="Kenny Coach retrato profesional" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach · Branding</div>
+                        <div class="kc-gal3-item-caption">Coach Kenny — Personal Trainer profesional</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 3 - Pose 2 -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Pose de espalda en competencia" data-src="assets/img/kenny/pose-competencia-2.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/pose-competencia-2.jpg" alt="Pose de espalda competencia" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Posing</div>
+                        <div class="kc-gal3-item-caption">Pose de espalda — Campeonato</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 2 - Piscina -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Aqua Fitness — Kenny y sus clientes en piscina" data-src="assets/img/kenny/kenny-clientes-piscina.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/kenny-clientes-piscina.jpg" alt="Kenny con clientes en piscina" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Aqua Fitness</div>
+                        <div class="kc-gal3-item-caption">Entrenamiento acuático — La comunidad Kenny Coach</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO 1 - Kenny flexionando -->
+                <div class="kc-gal3-item" data-cat="entrenando" data-caption="Los resultados hablan por sí solos — Kenny Coach" data-src="assets/img/kenny/kenny-flexing.png">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <img src="assets/img/kenny/kenny-flexing.png" alt="Kenny Coach flexionando" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando · Musculación</div>
+                        <div class="kc-gal3-item-caption">Los resultados hablan solos — Kenny Coach</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- PERSONAL 3 - Selfie gym -->
+                <div class="kc-gal3-item" data-cat="personal" data-caption="Disciplina · Enfoque · Constancia" data-src="assets/img/kenny/kenny-gym-selfie.png">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <img src="assets/img/kenny/kenny-gym-selfie.png" alt="Kenny Coach gym selfie" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach · Lifestyle</div>
+                        <div class="kc-gal3-item-caption">Disciplina · Enfoque · Constancia</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 4 - Pose 3 -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Posing frontal — Campeonato de Fisicoculturismo" data-src="assets/img/kenny/pose-competencia-3.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/pose-competencia-3.jpg" alt="Pose frontal competencia" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Posing</div>
+                        <div class="kc-gal3-item-caption">Pose frontal — Campeonato de Fisicoculturismo</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO 2 - Kenny cliente gym -->
+                <div class="kc-gal3-item" data-cat="entrenando" data-caption="Sesión de entrenamiento con cliente" data-src="assets/img/kenny/kenny-cliente-gym.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <img src="assets/img/kenny/kenny-cliente-gym.jpg" alt="Kenny entrenando cliente en gym" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando Clientes · 1:1</div>
+                        <div class="kc-gal3-item-caption">Sesión personalizada con cliente</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- PERSONAL 4 - Camiseta Coach Kenny -->
+                <div class="kc-gal3-item" data-cat="personal" data-caption="Coach Kenny — Personal Trainer" data-src="assets/img/kenny/kenny-coach-shirt.png">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <img src="assets/img/kenny/kenny-coach-shirt.png" alt="Coach Kenny Personal Trainer" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach · Marca Personal</div>
+                        <div class="kc-gal3-item-caption">Coach Kenny — Preparador físico profesional</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 3 - Gym colega -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Kenny con compañero de entrenamiento" data-src="assets/img/kenny/kenny-gym-colega.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/kenny-gym-colega.jpg" alt="Kenny y compañero de entrenamiento" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Gym</div>
+                        <div class="kc-gal3-item-caption">La motivación se trabaja en equipo</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 5 - Medallas -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Medallas y reconocimientos — Kenneth Sánchez López" data-src="assets/img/kenny/medallas-competencia.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/medallas-competencia.jpg" alt="Medallas de competencia" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Logros</div>
+                        <div class="kc-gal3-item-caption">Medallas y reconocimientos — Kenneth Sánchez</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO 3 - Hero principal -->
+                <div class="kc-gal3-item" data-cat="entrenando" data-caption="El dolor no importa, el dolor construye — Kenny Coach" data-src="assets/img/kenny/hero-kenny.jpeg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <img src="assets/img/kenny/hero-kenny.jpeg" alt="Kenny Coach entrenando" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando · Gym</div>
+                        <div class="kc-gal3-item-caption">El dolor no importa, el dolor construye</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 6 - Pose 4 -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Kenneth Sánchez — Pose lateral en competencia" data-src="assets/img/kenny/pose-competencia-4.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/pose-competencia-4.jpg" alt="Pose lateral competencia" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Posing</div>
+                        <div class="kc-gal3-item-caption">Kenneth Sánchez — Pose lateral en campeonato</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 4 - Clase grupal 2 -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Comunidad Kenny Coach — Clases grupales" data-src="assets/img/kenny/clientes-clase-2.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/clientes-clase-2.jpg" alt="Grupo de clientes Kenny Coach" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Comunidad</div>
+                        <div class="kc-gal3-item-caption">La comunidad Kenny Coach crece</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO 4 - Clase grupal -->
+                <div class="kc-gal3-item" data-cat="entrenando" data-caption="Clase grupal — Kenny Coach en acción" data-src="assets/img/kenny/clase-grupal.jpeg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <img src="assets/img/kenny/clase-grupal.jpeg" alt="Clase grupal Kenny Coach" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando · Clase Grupal</div>
+                        <div class="kc-gal3-item-caption">Kenny Coach dirigiendo clase grupal</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 7 - Kenny con colega tras medalla -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Kenneth Sánchez con medalla de competencia junto a su coach" data-src="assets/img/kenny/kenny-colega-medalla.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/kenny-colega-medalla.jpg" alt="Kenny Coach con medalla de competencia" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Logros</div>
+                        <div class="kc-gal3-item-caption">Medalla ganada — Kenneth Sánchez junto a su preparador</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 8 - Rodilla en escenario B&W -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Pose dramática sobre el escenario — Campeonato IFBB" data-src="assets/img/kenny/competicion-rodilla-escenario.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/competicion-rodilla-escenario.jpg" alt="Pose rodilla escenario competencia" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · IFBB</div>
+                        <div class="kc-gal3-item-caption">Pose dramática sobre el escenario — Campeonato IFBB</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 9 - Lateral tarima B&W -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Kenneth Sánchez — Posing lateral en tarima" data-src="assets/img/kenny/competicion-lateral-tarima.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/competicion-lateral-tarima.jpg" alt="Posing lateral en tarima" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Posing</div>
+                        <div class="kc-gal3-item-caption">Kenneth Sánchez — Posing lateral en tarima</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- COMPETICIÓN 10 - Frontal con número 27 B&W -->
+                <div class="kc-gal3-item" data-cat="competicion" data-caption="Kenneth Sánchez #27 — Pose frontal en campeonato" data-src="assets/img/kenny/competicion-frontal-27.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--competicion"><i class="fas fa-trophy"></i> Competición</span>
+                    <img src="assets/img/kenny/competicion-frontal-27.jpg" alt="Pose frontal número 27 campeonato" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Competición · Classic Physique</div>
+                        <div class="kc-gal3-item-caption">Kenneth Sánchez #27 — Pose frontal en campeonato</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO 5 - Kenny Under Armour gym -->
+                <div class="kc-gal3-item" data-cat="entrenando" data-caption="Kenny Coach en el gym — Fuerza y dedicación diaria" data-src="assets/img/kenny/kenny-under-armour-gym.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <img src="assets/img/kenny/kenny-under-armour-gym.jpg" alt="Kenny Coach entrenando en el gym" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando · Gym</div>
+                        <div class="kc-gal3-item-caption">Fuerza y dedicación — Kenny Coach en acción</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 5 - Clase grupal morado -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Kenny Coach con su grupo de entrenamiento funcional" data-src="assets/img/kenny/clientes-clase-grupal-morado.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/clientes-clase-grupal-morado.jpg" alt="Clase grupal Kenny Coach entrenamiento funcional" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Funcional</div>
+                        <div class="kc-gal3-item-caption">La comunidad Kenny Coach — Entrenamiento funcional</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 6 - Clase grupal grande -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Gran grupo de clientes — La familia Kenny Coach crece" data-src="assets/img/kenny/clientes-clase-grupal-grande.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/clientes-clase-grupal-grande.jpg" alt="Gran grupo de clientes Kenny Coach" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Comunidad</div>
+                        <div class="kc-gal3-item-caption">La familia Kenny Coach — Unidos por el fitness</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO 6 - Kenny selfie cliente gym -->
+                <div class="kc-gal3-item" data-cat="entrenando" data-caption="Kenny Coach con cliente en sesión de entrenamiento personalizado" data-src="assets/img/kenny/kenny-cliente-selfie-gym.jpeg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <img src="assets/img/kenny/kenny-cliente-selfie-gym.jpeg" alt="Kenny Coach con cliente en gym" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando Clientes · 1:1</div>
+                        <div class="kc-gal3-item-caption">Sesión personalizada — Kenny Coach y su cliente</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- PERSONAL 5 - Master Gym retrato profesional -->
+                <div class="kc-gal3-item" data-cat="personal" data-caption="Kenneth Sánchez — Retrato profesional Master Gym" data-src="assets/img/kenny/kenny-master-gym-portrait.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <img src="assets/img/kenny/kenny-master-gym-portrait.jpg" alt="Kenny Coach retrato Master Gym" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach · Branding</div>
+                        <div class="kc-gal3-item-caption">Kenneth Sánchez — Retrato profesional</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES 7 - Ciclismo indoor grupo negro -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Clase de ciclismo indoor — Kenny Coach y su equipo" data-src="assets/img/kenny/clientes-ciclismo-negro.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/clientes-ciclismo-negro.jpg" alt="Clase ciclismo indoor Kenny Coach" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Ciclismo Indoor</div>
+                        <div class="kc-gal3-item-caption">Clase de ciclismo indoor — La comunidad Kenny Coach</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO CLIENTES VIDEO 1 - clientes-video-entrenamiento-1 -->
+                <div class="kc-gal3-item kc-gal3-item--video" data-cat="entrenando" data-caption="Entrenamiento con clientes — Kenny Coach en acción" data-video="assets/img/kenny/clientes-video-entrenamiento-1.mp4">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <video class="kc-gal3-video-thumb" src="assets/img/kenny/clientes-video-entrenamiento-1.mp4" muted loop playsinline preload="metadata"></video>
+                    <div class="kc-gal3-play-badge"><i class="fas fa-play"></i></div>
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando Clientes · Video</div>
+                        <div class="kc-gal3-item-caption">Entrenamiento con clientes — Kenny Coach en acción</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- ENTRENANDO CLIENTES VIDEO 2 - clientes-video-entrenando-2 -->
+                <div class="kc-gal3-item kc-gal3-item--video" data-cat="entrenando" data-caption="Sesión grupal con clientes — Disciplina y resultados" data-video="assets/img/kenny/clientes-video-entrenando-2.mp4">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--entrenando"><i class="fas fa-dumbbell"></i> Entrenando</span>
+                    <video class="kc-gal3-video-thumb" src="assets/img/kenny/clientes-video-entrenando-2.mp4" muted loop playsinline preload="metadata"></video>
+                    <div class="kc-gal3-play-badge"><i class="fas fa-play"></i></div>
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Entrenando Clientes · Video</div>
+                        <div class="kc-gal3-item-caption">Sesión grupal — Disciplina y resultados</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES VIDEO 1 - clientes-video-entrenando-3 -->
+                <div class="kc-gal3-item kc-gal3-item--video" data-cat="clientes" data-caption="Kenny Coach con sus clientes — La comunidad crece" data-video="assets/img/kenny/clientes-video-entrenando-3.mp4">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <video class="kc-gal3-video-thumb" src="assets/img/kenny/clientes-video-entrenando-3.mp4" muted loop playsinline preload="metadata"></video>
+                    <div class="kc-gal3-play-badge"><i class="fas fa-play"></i></div>
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Video</div>
+                        <div class="kc-gal3-item-caption">Kenny Coach con sus clientes — La comunidad crece</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES VIDEO 2 - clientes-video-entrenando-4 -->
+                <div class="kc-gal3-item kc-gal3-item--video" data-cat="clientes" data-caption="Momento con clientes — Kenny Coach Team" data-video="assets/img/kenny/clientes-video-entrenando-4.mp4">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <video class="kc-gal3-video-thumb" src="assets/img/kenny/clientes-video-entrenando-4.mp4" muted loop playsinline preload="metadata"></video>
+                    <div class="kc-gal3-play-badge"><i class="fas fa-play"></i></div>
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Video</div>
+                        <div class="kc-gal3-item-caption">Momento con clientes — Kenny Coach Team</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+
+                <!-- PERSONAL VIDEO - Logo Kenny Coach en acción -->
+                <div class="kc-gal3-item kc-gal3-item--video" data-cat="personal" data-caption="Kenny Coach — Logo animado en acción" data-video="assets/img/kenny/entrenamiento-video.mp4">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <video class="kc-gal3-video-thumb" src="assets/img/kenny/entrenamiento-video.mp4" poster="assets/img/kenny/entrenamiento-poster.jpg" muted loop playsinline preload="metadata"></video>
+                    <div class="kc-gal3-play-badge"><i class="fas fa-play"></i></div>
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach · Branding</div>
+                        <div class="kc-gal3-item-caption">Kenny Coach — Logo animado en acción</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+
+                <!-- PERSONAL - Kenny formal con camisa Kenny Coach -->
+                <div class="kc-gal3-item" data-cat="personal" data-caption="Kenny Coach — Entrenador personal profesional" data-src="assets/img/kenny/kenny-formal-camisa.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--personal"><i class="fas fa-star"></i> Kenny Coach</span>
+                    <img src="assets/img/kenny/kenny-formal-camisa.jpg" alt="Kenny Coach formal con camisa" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Kenny Coach · Branding</div>
+                        <div class="kc-gal3-item-caption">Kenny Coach — Entrenador personal profesional</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+                <!-- CON CLIENTES - Grupo gym (foto nueva) -->
+                <div class="kc-gal3-item" data-cat="clientes" data-caption="Kenny Coach con su grupo de clientes en el gym" data-src="assets/img/kenny/clientes-clase-grupo-gym.jpg">
+                    <span class="kc-gal3-cat-tag kc-gal3-cat-tag--clientes"><i class="fas fa-users"></i> Con Clientes</span>
+                    <img src="assets/img/kenny/clientes-clase-grupo-gym.jpg" alt="Kenny Coach con grupo de clientas en clase" loading="lazy">
+                    <div class="kc-gal3-item-overlay">
+                        <div class="kc-gal3-item-cat">Con Clientes · Clase Grupal</div>
+                        <div class="kc-gal3-item-caption">Kenny Coach con su grupo de clientes en el gym</div>
+                    </div>
+                    <div class="kc-gal3-item-zoom"><i class="fas fa-expand-alt"></i></div>
+                </div>
+
+            </div><!-- /kc-gal3-grid -->
+        </div><!-- /kc-gal3-wrap -->
+
+    </div><!-- /kc-gallery3-section -->
+
+    <!-- LIGHTBOX -->
+    <div class="kc-lightbox-overlay" id="kc-lightbox">
+        <button class="kc-lightbox-close" id="kc-lb-close"><i class="fas fa-times"></i></button>
+        <button class="kc-lightbox-nav kc-lightbox-prev" id="kc-lb-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="kc-lightbox-inner">
+            <img src="" alt="" class="kc-lightbox-img" id="kc-lb-img">
+            <video class="kc-lightbox-img" id="kc-lb-video" muted loop playsinline controls style="display:none;"></video>
+        </div>
+        <button class="kc-lightbox-nav kc-lightbox-next" id="kc-lb-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="kc-lightbox-caption" id="kc-lb-caption"><span></span></div>
+    </div>
+
+</div>
+
+
+<!-- SECCIÓN: CERTIFICACIONES Y ATESTADOS -->
+<div id="section-certificaciones" class="kc-page-section black-bg">
+    <div style="min-height:80px;"></div>
+    <section class="kc-cert-section kc-section-pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="kc-tag-label">Certificaciones y Atestados</span>
+                    <h2 style="color:#fff;font-size:36px;font-weight:700;margin-bottom:10px;">Respaldo Profesional</h2>
+                    <p style="color:#999;font-size:15px;max-width:600px;margin:0 auto 40px;">Formación, certificaciones y acreditaciones que respaldan cada plan diseñado por Kenny Coach.</p>
+                </div>
+            </div>
+            <div class="row kc-cert-grid">
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-cert-card">
+                        <a href="assets/img/kenny/diploma.jpeg" class="kc-cert-lightbox" title="Certificaciones Internacionales">
+                            <div class="kc-cert-card-img" style="background-image:url(assets/img/kenny/diploma.jpeg);"></div>
+                        </a>
+                        <div class="kc-cert-card-body">
+                            <div class="kc-cert-icon"><i class="fas fa-globe-americas"></i></div>
+                            <h5>Certificaciones Internacionales</h5>
+                            <p>Acreditaciones reconocidas internacionalmente en entrenamiento y preparación física.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-cert-card">
+                        <a href="assets/img/kenny/cert-tecnico-prep-fisica.jpg" class="kc-cert-lightbox" title="Título de Preparador Físico">
+                            <div class="kc-cert-card-img" style="background-image:url(assets/img/kenny/cert-tecnico-prep-fisica.jpg);"></div>
+                        </a>
+                        <div class="kc-cert-card-body">
+                            <div class="kc-cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h5>Título de Preparador Físico</h5>
+                            <p>Técnico en Preparación Física y Rendimiento Deportivo — Universidad de Cartago Florencio del Castillo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-cert-card">
+                        <a href="assets/img/kenny/cert-nutricion-deportiva.jpg" class="kc-cert-lightbox" title="Diplomados">
+                            <div class="kc-cert-card-img" style="background-image:url(assets/img/kenny/cert-nutricion-deportiva.jpg);"></div>
+                        </a>
+                        <div class="kc-cert-card-body">
+                            <div class="kc-cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h5>Diplomados</h5>
+                            <p>Curso virtual de Nutrición Deportiva — Academia Socio Integral del Deporte OHANA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-cert-card">
+                        <a href="assets/img/kenny/cert-entrenamiento-funcional.jpg" class="kc-cert-lightbox" title="Cursos">
+                            <div class="kc-cert-card-img" style="background-image:url(assets/img/kenny/cert-entrenamiento-funcional.jpg);"></div>
+                        </a>
+                        <div class="kc-cert-card-body">
+                            <div class="kc-cert-icon"><i class="fas fa-book-open"></i></div>
+                            <h5>Cursos</h5>
+                            <p>Curso virtual de Entrenamiento Funcional — Academia Socio Integral del Deporte OHANA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-cert-card">
+                        <a href="assets/img/kenny/cert-planificacion-fuerza.jpg" class="kc-cert-lightbox" title="Especializaciones">
+                            <div class="kc-cert-card-img" style="background-image:url(assets/img/kenny/cert-planificacion-fuerza.jpg);"></div>
+                        </a>
+                        <div class="kc-cert-card-body">
+                            <div class="kc-cert-icon"><i class="fas fa-award"></i></div>
+                            <h5>Especializaciones</h5>
+                            <p>Planificación del Entrenamiento de la Fuerza — Universidad Florencio del Castillo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="kc-cert-card">
+                        <a href="assets/img/kenny/carnet-entrenador-acaffem.jpg" class="kc-cert-lightbox" title="Otras Acreditaciones Profesionales">
+                            <div class="kc-cert-card-img" style="background-image:url(assets/img/kenny/carnet-entrenador-acaffem.jpg);"></div>
+                        </a>
+                        <div class="kc-cert-card-body">
+                            <div class="kc-cert-icon"><i class="fas fa-medal"></i></div>
+                            <h5>Otras Acreditaciones Profesionales</h5>
+                            <p>Carnet de Entrenador — Especialista en Preparación para Atletas de Fisicoculturismo (INAF / ACAFFEM).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:20px;">
+                <a href="#contacto" class="kc-btn-solid" onclick="showMainContent()">Solicitar Asesoría</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- SECCIÓN: MÉTODOS DE PAGO -->
+<div id="section-pagos" class="kc-page-section black-bg">
+    <div style="min-height:80px;"></div>
+    <section class="kc-payment-section kc-section-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span class="kc-tag-label">Métodos de Pago</span>
+                        <h2 style="color:#fff;">Paga de Forma Fácil y Segura</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="kc-payment-card">
+                        <div class="kc-payment-icon"><i class="fas fa-university"></i></div>
+                        <h4>Transferencia Bancaria</h4>
+                        <p>SINPE Móvil / Transferencia</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="kc-payment-card">
+                        <div class="kc-payment-icon"><i class="fas fa-credit-card"></i></div>
+                        <h4>Tarjeta</h4>
+                        <p>Débito o Crédito</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="kc-payment-card">
+                        <div class="kc-payment-icon"><i class="fab fa-paypal"></i></div>
+                        <h4>PayPal</h4>
+                        <p>Pago internacional</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="kc-payment-card">
+                        <div class="kc-payment-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h4>Coordinar por WhatsApp</h4>
+                        <p>Atención personalizada</p>
+                    </div>
+                </div>
+            </div>
+            <p class="kc-payment-note">Selecciona un plan y completa tu compra con el método que prefieras.</p>
+            <div style="text-align:center;margin-top:40px;">
+                <a href="#planes" class="kc-btn-solid" onclick="showMainContent()">Ver Planes y Precios</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ===== CHECKOUT MODAL (pequeño, independiente) ===== -->
+<div id="kc-checkout-modal" class="kc-modal-overlay">
+    <div class="kc-modal-box">
+        <button id="kc-modal-close" class="kc-modal-close" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+
+        <div id="kc-modal-step-1" class="kc-modal-step">
+            <span class="kc-tag-label">Finalizar Compra</span>
+            <h3 class="kc-modal-title">Resumen de tu Pedido</h3>
+            <div class="kc-order-summary">
+                <div class="kc-order-row">
+                    <span id="kc-order-plan-name">—</span>
+                    <span class="kc-order-price">&#x20A1;<span id="kc-order-crc">0</span> / $<span id="kc-order-usd">0</span> USD</span>
+                </div>
+            </div>
+            <h4 class="kc-modal-subtitle">Elige tu método de pago</h4>
+            <div class="kc-pay-methods">
+                <button class="kc-pay-method-btn" data-method="tarjeta"><i class="fas fa-credit-card"></i><span>Tarjeta</span><small>Débito o Crédito</small></button>
+                <button class="kc-pay-method-btn" data-method="sinpe"><i class="fas fa-mobile-alt"></i><span>SINPE Móvil</span><small>Pago desde CR</small></button>
+                <button class="kc-pay-method-btn" data-method="transferencia"><i class="fas fa-university"></i><span>Transferencia</span><small>Depósito bancario</small></button>
+                <button class="kc-pay-method-btn" data-method="paypal"><i class="fab fa-paypal"></i><span>PayPal</span><small>Pago internacional</small></button>
+            </div>
+        </div>
+
+        <div id="kc-modal-step-2" class="kc-modal-step" style="display:none;">
+            <button id="kc-modal-back" class="kc-modal-back"><i class="fas fa-arrow-left"></i> Volver</button>
+
+            <div id="kc-pay-tarjeta" class="kc-pay-detail" style="display:none;">
+                <div class="kc-pay-detail-icon"><i class="fas fa-credit-card"></i></div>
+                <h3 class="kc-modal-title">Pago con Tarjeta</h3>
+                <p class="kc-pay-detail-text">Ingresa los datos de tu tarjeta para completar el pago de forma segura.</p>
+                <div class="kc-card-form payFormTilopay">
+                    <label style="display:none;">Método<select id="method" name="method"></select></label>
+                    <label style="display:none;">Tarjetas guardadas<select id="cards" name="cards"></select></label>
+                    <label>Correo electrónico<input type="email" id="kc-tilopay-email" placeholder="tucorreo@ejemplo.com" class="kc-fake-input"></label>
+                    <label>Número de tarjeta<input type="text" id="ccnumber" name="ccnumber" placeholder="1234 5678 9012 3456" maxlength="19" class="kc-fake-input"></label>
+                    <div class="kc-card-form-row">
+                        <label>Vencimiento<input type="text" id="expdate" name="expdate" placeholder="MM/AA" maxlength="5" class="kc-fake-input"></label>
+                        <label>CVV<input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" class="kc-fake-input"></label>
+                    </div>
+                    <label>Nombre en la tarjeta<input type="text" id="kc-tilopay-name" placeholder="Como aparece en la tarjeta" class="kc-fake-input"></label>
+                </div>
+                <div class="kc-card-brands"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-amex"></i></div>
+                <div id="result"></div>
+                <button class="kc-btn-confirm-pay" id="kc-tilopay-pay-btn" data-method-label="Tarjeta"><i class="fas fa-lock"></i> Confirmar Pago</button>
+                <p class="kc-pay-demo-note" id="kc-tilopay-note">Pago seguro procesado por TiloPay.</p>
+            </div>
+
+            <div id="kc-pay-sinpe" class="kc-pay-detail" style="display:none;">
+                <div class="kc-pay-detail-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3 class="kc-modal-title">Pago por SINPE Móvil</h3>
+                <p class="kc-pay-detail-text">Realiza el SINPE Móvil al siguiente número:</p>
+                <div class="kc-transfer-box">
+                    <div class="kc-transfer-row"><span>Número SINPE</span><strong>6203-6881</strong></div>
+                    <div class="kc-transfer-row"><span>A nombre de</span><strong>Kenny Coach Team</strong></div>
+                    <div class="kc-transfer-row"><span>Monto</span><strong>&#x20A1;<span class="kc-order-crc-mirror">0</span></strong></div>
+                </div>
+                <div class="kc-whatsapp-callout">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>Una vez realizado el pago, envía el <strong>comprobante por WhatsApp</strong> para confirmar tu plan.</p>
+                </div>
+                <a href="#" id="kc-sinpe-whatsapp" target="_blank" class="kc-btn-confirm-pay kc-btn-whatsapp"><i class="fab fa-whatsapp"></i> Enviar Comprobante</a>
+                <p class="kc-pay-demo-note">Confirmación manual vía WhatsApp.</p>
+            </div>
+
+            <div id="kc-pay-transferencia" class="kc-pay-detail" style="display:none;">
+                <div class="kc-pay-detail-icon"><i class="fas fa-university"></i></div>
+                <h3 class="kc-modal-title">Transferencia / Depósito Bancario</h3>
+                <p class="kc-pay-detail-text">Realiza el depósito o transferencia a la siguiente cuenta:</p>
+                <div class="kc-transfer-box">
+                    <div class="kc-transfer-row"><span>Banco</span><strong>BAC / BCR / Banco Nacional</strong></div>
+                    <div class="kc-transfer-row"><span>Cuenta IBAN</span><strong>CR00-0000-0000-0000-0000-00</strong></div>
+                    <div class="kc-transfer-row"><span>A nombre de</span><strong>Kenny Coach Team</strong></div>
+                    <div class="kc-transfer-row"><span>Monto</span><strong>&#x20A1;<span class="kc-order-crc-mirror">0</span></strong></div>
+                </div>
+                <div class="kc-whatsapp-callout">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>Envía el <strong>comprobante por WhatsApp</strong> para confirmar tu plan.</p>
+                </div>
+                <a href="#" id="kc-transfer-whatsapp" target="_blank" class="kc-btn-confirm-pay kc-btn-whatsapp"><i class="fab fa-whatsapp"></i> Enviar Comprobante</a>
+            </div>
+
+            <div id="kc-pay-paypal" class="kc-pay-detail" style="display:none;">
+                <div class="kc-pay-detail-icon kc-paypal-icon"><i class="fab fa-paypal"></i></div>
+                <h3 class="kc-modal-title">Pago con PayPal</h3>
+                <p class="kc-pay-detail-text">Serás dirigido a PayPal para completar tu pago de forma segura en dólares.</p>
+                <div class="kc-transfer-box">
+                    <div class="kc-transfer-row"><span>Monto a pagar</span><strong>$<span class="kc-order-usd-mirror">0</span> USD</strong></div>
+                </div>
+                <div id="kc-paypal-buttons"></div>
+                <p class="kc-pay-demo-note">Pago seguro procesado por PayPal.</p>
+            </div>
+        </div>
+
+        <div id="kc-modal-step-3" class="kc-modal-step" style="display:none;">
+            <div class="kc-success-icon"><i class="fas fa-check"></i></div>
+            <h3 class="kc-modal-title">¡Compra Exitosa!</h3>
+            <p class="kc-pay-detail-text kc-success-text" id="kc-success-message">Tu programa ha sido procesado correctamente.</p>
+            <!-- Botón de descarga automática de PDF -->
+            <div id="kc-pdf-download-wrap" style="display:none;margin:20px 0;">
+                <div style="background:rgba(201,162,39,0.08);border:1px solid rgba(201,162,39,0.3);border-radius:10px;padding:18px 20px;text-align:center;">
+                    <i class="fas fa-file-pdf" style="font-size:28px;color:var(--kc-gold);margin-bottom:10px;display:block;"></i>
+                    <p style="color:#ccc;font-size:13px;margin-bottom:14px;">Tu programa está listo. Descárgalo ahora y guárdalo en tu dispositivo.</p>
+                    <div id="kc-pdf-download-btns"></div>
+                </div>
+            </div>
+            <div id="kc-pdf-pending-wrap" style="display:none;margin:20px 0;">
+                <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:16px;text-align:center;">
+                    <i class="fas fa-envelope" style="font-size:24px;color:var(--kc-gold);margin-bottom:8px;display:block;"></i>
+                    <p style="color:#aaa;font-size:13px;margin:0;">Una vez confirmado tu pago, recibirás el programa directamente. <br>¿Dudas? Escríbenos por <a href="https://wa.me/50662036881" target="_blank" style="color:var(--kc-gold);">WhatsApp</a>.</p>
+                </div>
+            </div>
+            <button id="kc-modal-finish" class="kc-btn-confirm-pay" style="margin-top:14px;">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/kenny-cart.js"></script>
+<script src="https://app.tilopay.com/sdk/v1/sdk.min.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AR2WJb0pi1z5tqJTzij3nDgAlxNqFVDsWKLO4R1wndRTpehy3UGvRvKontc0q3Qe97rx-bRJeXjSWVLK&currency=USD"></script>
+<script src="./assets/js/kenny-payments.js"></script>
+
+<script>
+// ====== NAVEGACIÓN POR SECCIONES EN PÁGINA ======
+// Mapeo de sección → id del link del nav
+var navSectionMap = {
+    'section-categorias':    'nav-categorias',
+    'section-transformaciones': 'nav-transform',
+    'section-testimonios':   'nav-testi',
+    'section-galeria':       'nav-galeria',
+    'section-certificaciones': 'nav-certificaciones',
+    'section-pagos':         'nav-pagos'
+};
+
+function showPageSection(sectionId) {
+    // Ocultar contenido principal
+    document.getElementById('kc-main-content').style.display = 'none';
+
+    // Ocultar todas las secciones
+    document.querySelectorAll('.kc-page-section').forEach(function(s) {
+        s.classList.remove('kc-section-active');
+    });
+
+    // Mostrar la sección solicitada
+    var target = document.getElementById(sectionId);
+    if (target) {
+        target.classList.add('kc-section-active');
+    }
+
+    // Marcar enlace activo en nav
+    document.querySelectorAll('#navigation li a').forEach(function(a) {
+        a.classList.remove('kc-nav-active');
+    });
+    if (navSectionMap[sectionId]) {
+        var activeLink = document.getElementById(navSectionMap[sectionId]);
+        if (activeLink) activeLink.classList.add('kc-nav-active');
+    }
+
+    // Scroll arriba
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Cerrar menú móvil si está abierto
+    if (typeof jQuery !== 'undefined') {
+        var $nav = jQuery('ul#navigation');
+        if ($nav.length) { try { $nav.slicknav('close'); } catch(e) {} }
+    }
+
+    // Si es galería, resetear filtro
+    if (sectionId === 'section-galeria') {
+        document.querySelectorAll('.kc-gallery-filter').forEach(function(b) { b.classList.remove('active'); });
+        var allBtn = document.querySelector('.kc-gallery-filter[data-filter="all"]');
+        if (allBtn) allBtn.classList.add('active');
+        document.querySelectorAll('.kc-gallery-item').forEach(function(item) { item.style.display = ''; });
+    }
+}
+
+function showMainContent() {
+    // Ocultar todas las secciones
+    document.querySelectorAll('.kc-page-section').forEach(function(s) {
+        s.classList.remove('kc-section-active');
+    });
+
+    // Mostrar contenido principal
+    document.getElementById('kc-main-content').style.display = '';
+
+    // Limpiar nav activo
+    document.querySelectorAll('#navigation li a').forEach(function(a) {
+        a.classList.remove('kc-nav-active');
+    });
+
+    // Restaurar scroll del body
+    document.body.style.overflow = '';
+
+    // Cerrar menú móvil si está abierto
+    if (typeof jQuery !== 'undefined') {
+        var $nav = jQuery('ul#navigation');
+        if ($nav.length) { try { $nav.slicknav('close'); } catch(e) {} }
+    }
+}
+
+// ====== SMOOTH SCROLL (solo en main content) ======
+(function () {
+    document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        var href = link.getAttribute('href');
+        if (!href || href.length < 2) return;
+
+        // Ignorar clicks dentro de modales para no interferir con su funcionamiento
+        if (link.closest('.kc-modal-overlay')) return;
+
+        // Solo actuar si hay una sección de página activa o si el target existe en main
+        var hasActiveSection = document.querySelector('.kc-page-section.kc-section-active');
+
+        var target = document.querySelector(href);
+        if (!target) return;
+
+        // Si hay una sección activa, primero volver a main
+        if (hasActiveSection) {
+            showMainContent();
+        }
+
+        e.preventDefault();
+        setTimeout(function() {
+            target.classList.remove('kc-scroll-highlight');
+            void target.offsetWidth;
+            target.classList.add('kc-scroll-highlight');
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(function () { target.classList.remove('kc-scroll-highlight'); }, 900);
+        }, hasActiveSection ? 80 : 0);
+    });
+})();
+
+
+
+// ====== CARRUSEL "SOBRE KENNY COACH" ======
+if (typeof jQuery !== 'undefined' && jQuery.fn.owlCarousel) {
+    var $kcAboutCarousel = jQuery('.kc-about-carousel');
+    var kcAboutVideoEl = document.querySelector('.kc-about-video');
+
+    $kcAboutCarousel.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: true,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        smartSpeed: 500
+    });
+
+    // Reproduce el video solo cuando su slide está activo (optimización de recursos)
+    if (kcAboutVideoEl) {
+        $kcAboutCarousel.on('translate.owl.carousel', function () {
+            kcAboutVideoEl.pause();
+        });
+        $kcAboutCarousel.on('translated.owl.carousel', function (e) {
+            var activeItem = e.target.querySelectorAll('.owl-item.active .kc-about-video')[0];
+            if (activeItem === kcAboutVideoEl) {
+                kcAboutVideoEl.currentTime = 0;
+                kcAboutVideoEl.play().catch(function(){});
+            }
+        });
+        // Autoplay inicial si el video es la primera slide visible
+        setTimeout(function () {
+            var activeItem = document.querySelectorAll('.kc-about-carousel .owl-item.active .kc-about-video')[0];
+            if (activeItem === kcAboutVideoEl) { kcAboutVideoEl.play().catch(function(){}); }
+        }, 300);
+    }
+}
+
+// ====== PILARES HERO: Modal informativo ======
+var pilarData = {
+    personalizado: {
+        icon: 'fas fa-user-check',
+        title: 'Entrenamiento Personalizado',
+        body: 'Cada plan es creado desde cero según tu objetivo, nivel de condición física, disponibilidad y equipamiento. No hay rutinas genéricas: tu plan es tuyo y solo tuyo. Con ajustes semanales y seguimiento constante para que nunca te estanques.'
+    },
+    transformacion: {
+        icon: 'fas fa-fire',
+        title: 'Transformación Física',
+        body: 'La transformación real no sucede por accidente. Requiere un plan inteligente, ejecución correcta y constancia. Kenny Coach ha diseñado más de 3.000 planes de transformación y conoce exactamente qué funciona, porque lo vivió en carne propia como atleta activo de Classic Physique.'
+    },
+    resultados: {
+        icon: 'fas fa-trophy',
+        title: 'Resultados Reales',
+        body: 'Sin promesas vacías ni fórmulas mágicas. Los resultados que ves en esta página son producto de disciplina, estrategia y compromiso mutuo. Tu progreso se mide, se ajusta y se potencia semana a semana. Ese es el estándar Kenny Coach Team.'
+    }
+};
+
+document.querySelectorAll('.kc-pillar-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+        var key = this.getAttribute('data-pillar');
+        var data = pilarData[key];
+        if(!data) return;
+        document.getElementById('kc-pillar-content').innerHTML =
+            '<div style="text-align:center;margin-bottom:20px;"><i class="'+data.icon+'" style="font-size:42px;color:var(--kc-gold);"></i></div>'+
+            '<span class="kc-tag-label" style="text-align:center;display:block;">Kenny Coach Team</span>'+
+            '<h3 class="kc-modal-title" style="text-align:center;">'+data.title+'</h3>'+
+            '<p style="color:#ccc;font-size:15px;line-height:1.8;text-align:center;">'+data.body+'</p>'+
+            '<a href="#contacto" class="kc-btn-confirm-pay mt-3" onclick="document.getElementById(\'kc-pillar-modal\').classList.remove(\'kc-modal-open\')"><i class="fab fa-whatsapp"></i> Solicitar Asesoría</a>';
+        document.getElementById('kc-pillar-modal').classList.add('kc-modal-open');
+    });
+});
+document.getElementById('kc-pillar-modal').addEventListener('click', function(e){
+    if(e.target === this) this.classList.remove('kc-modal-open');
+});
+
+// ====== SERVICIOS: Modal interactivo ======
+var serviceData = {
+    fisico: {
+        icon: 'fas fa-medal',
+        title: 'Fisicoculturismo',
+        body: 'Como atleta activo de la categoría Classic Physique, Kenny Coach trae a cada cliente la experiencia de quien ha vivido la preparación en tarima. Aprenderás a estructurar ciclos de volumen y definición, ejecutar posing, manejar la dieta de competencia y llegar el día del evento en el mejor estado posible.',
+        media: ['assets/img/kenny/competencia.jpeg', 'assets/img/kenny/kenny-ronnie.jpeg']
+    },
+    muscular: {
+        icon: 'fas fa-dumbbell',
+        title: 'Ganancia Muscular',
+        body: 'Rutinas de fuerza e hipertrofia con progresión medible. El programa se basa en principios de sobrecarga progresiva, periodización y recuperación adecuada. Resultados sostenidos sin sacrificar salud.',
+        media: ['assets/img/kenny/kenny-ronnie.jpeg', 'assets/img/kenny/hero-kenny.jpeg']
+    },
+    grasa: {
+        icon: 'fas fa-fire-alt',
+        title: 'Reducción de Grasa Corporal',
+        body: 'Planes estratégicos que combinan entrenamiento, hábitos saludables y ajuste de composición corporal. Sin dietas extremas ni soluciones rápidas: reducción real, sostenida y sin efecto rebote.',
+        media: ['assets/img/kenny/transformacion.jpeg', 'assets/img/kenny/clase-grupal.jpeg']
+    },
+    funcional: {
+        icon: 'fas fa-running',
+        title: 'Entrenamiento Funcional',
+        body: 'Cardio Dance, ciclismo de interiores y movimientos funcionales que mejoran tu rendimiento diario, tu postura y tu resistencia cardiovascular. Ideal para quienes buscan variedad, energía y bienestar general.',
+        media: ['assets/img/kenny/clase-grupal.jpeg']
+    },
+    rendimiento: {
+        icon: 'fas fa-bolt',
+        title: 'Alto Rendimiento Deportivo',
+        body: 'Preparación específica para deportistas que buscan maximizar su desempeño competitivo. Fuerza, potencia, velocidad y resistencia adaptados a cada disciplina. Kenny Coach conoce el camino porque él mismo lo recorre.',
+        media: ['assets/img/kenny/hero-kenny.jpeg']
+    },
+    acondi: {
+        icon: 'fas fa-heart',
+        title: 'Acondicionamiento Físico General',
+        body: 'Para quienes buscan mejorar su condición física, energía y calidad de vida sin metas competitivas. Un punto de partida sólido y progresivo que construye la base para cualquier objetivo futuro.',
+        media: ['assets/img/kenny/transformacion.jpeg']
+    }
+};
+
+document.querySelectorAll('.kc-service-card').forEach(function(card){
+    card.addEventListener('click', function(){
+        var key = this.getAttribute('data-service');
+        var data = serviceData[key];
+        if(!data) return;
+
+        var mediaHtml = '';
+        if (data.media && data.media.length) {
+            mediaHtml += '<div class="kc-service-media-grid">';
+            data.media.forEach(function(src){
+                mediaHtml += '<div class="kc-service-media-item" style="background-image:url(' + src + ')"></div>';
+            });
+            mediaHtml += '</div>';
+        }
+        mediaHtml += '<p class="kc-service-media-note"><i class="fas fa-images"></i> Próximamente: galería completa de fotos y videos de esta categoría.</p>';
+
+        document.getElementById('kc-service-content').innerHTML =
+            '<div style="text-align:center;margin-bottom:20px;"><i class="'+data.icon+'" style="font-size:42px;color:var(--kc-gold);"></i></div>'+
+            '<span class="kc-tag-label" style="text-align:center;display:block;">Kenny Coach Team</span>'+
+            '<h3 class="kc-modal-title" style="text-align:center;">'+data.title+'</h3>'+
+            '<p style="color:#ccc;font-size:15px;line-height:1.8;text-align:center;">'+data.body+'</p>'+
+            mediaHtml;
+        document.getElementById('kc-service-modal').classList.add('kc-modal-open');
+    });
+});
+document.getElementById('kc-service-modal').addEventListener('click', function(e){
+    if(e.target === this) this.classList.remove('kc-modal-open');
+});
+
+// ====== TESTIMONIOS: accesibilidad por teclado en "Ver resultado" ======
+document.querySelectorAll('.kc-testimonial-transform[role="button"]').forEach(function(el){
+    el.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            el.click();
+        }
+    });
+});
+
+// ====== CERTIFICADOS: Lightbox (ver documento en grande) ======
+if (typeof jQuery !== 'undefined' && jQuery.fn.magnificPopup) {
+    jQuery('.kc-cert-lightbox').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true }
+    });
+}
+
+// ====== GALERÍA: Categorías con lightbox por grupo ======
+(function(){
+    if (typeof jQuery === 'undefined' || !jQuery.fn.magnificPopup) return;
+
+    // Inicializar cada grupo de links como galería independiente
+    var groups = ['competencias','clientes','grupal','personalizado'];
+    groups.forEach(function(g){
+        jQuery('.kc-gcat-' + g).magnificPopup({
+            type: 'image',
+            gallery: { enabled: true },
+            image: { titleSrc: 'title' },
+            removalDelay: 300,
+            mainClass: 'mfp-fade'
+        });
+    });
+
+    // Al clicar la card completa, disparar el primer link del grupo
+    document.querySelectorAll('.kc-g2-card:not(.kc-g2-card--soon):not(.kc-gcat-video-card)').forEach(function(card){
+        card.addEventListener('click', function(e){
+            if (e.target.tagName !== 'A') {
+                var firstLink = card.querySelector('.kc-gcat-link');
+                if (firstLink) jQuery(firstLink).trigger('click');
+            }
+        });
+    });
+
+    // Card de video: toggle del player
+    var videoCard = document.querySelector('.kc-gcat-video-card');
+    var videoWrap = document.getElementById('kc-gcat-video-wrap');
+    var videoEl   = document.getElementById('kc-main-video');
+    var videoBtn  = document.getElementById('kc-main-video-btn');
+    var videoClose= document.getElementById('kc-gcat-video-close');
+
+    if (videoCard && videoWrap) {
+        videoCard.style.cursor = 'pointer';
+        videoCard.addEventListener('click', function(){
+            videoWrap.style.setProperty('display','block','important');
+            videoCard.closest('.col-xl-3, .col-lg-4, .col-md-6, .col-sm-6').scrollIntoView({behavior:'smooth', block:'nearest'});
+        });
+    }
+    if (videoBtn && videoEl) {
+        videoBtn.addEventListener('click', function(){
+            if (videoEl.paused) { videoEl.play(); videoBtn.style.opacity = 0; }
+            else { videoEl.pause(); videoBtn.style.opacity = 1; }
+        });
+    }
+    if (videoClose && videoWrap && videoEl) {
+        videoClose.addEventListener('click', function(){
+            videoEl.pause();
+            videoBtn.style.opacity = 1;
+            videoWrap.style.setProperty('display','none','important');
+        });
+    }
+})();
+
+// ====== CARRITO EN HEADER: delegar a kenny-cart.js ======
+function syncCartModal() {
+    // La lógica del carrito la maneja kenny-cart.js
+    // Esta función solo dispara el botón de checkout principal
+    var checkoutBtn = document.getElementById('kc-checkout-btn');
+    if (checkoutBtn) checkoutBtn.click();
+}
+
+// (Carrito y header cart sincronizados desde kenny-cart.js)
+
+// ====== ESC: cerrar modales pequeños ======
+document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+        document.getElementById('kc-pillar-modal').classList.remove('kc-modal-open');
+        document.getElementById('kc-service-modal').classList.remove('kc-modal-open');
+        document.getElementById('kc-checkout-modal').classList.remove('kc-modal-open');
+    }
+});
+
+// ====== MENÚ MÓVIL: cerrar al navegar ======
+// Se inyecta directamente en los onclick de los links del nav original.
+// Slicknav copia esos links al menú móvil, incluyendo el onclick.
+// Nada que hacer aquí — ver los onclick inline en el nav.
+
+// ====== ENTREGA AUTOMÁTICA DE PDFs ======
+// Mapa de slug de producto → archivo PDF en /assets/pdfs/
+var KC_PDF_MAP = {
+    'gluteos-de-titanio':   { file: 'assets/pdfs/gluteos-de-titanio.pdf',  name: 'Glúteos de Titanio' },
+    'espalda-de-acero':     { file: 'assets/pdfs/espalda-de-acero.pdf',    name: 'Espalda de Acero' },
+    'pecho-de-hierro':      { file: 'assets/pdfs/pecho-de-hierro.pdf',     name: 'Pecho de Hierro' },
+    'piernas-de-elite':     { file: 'assets/pdfs/piernas-de-elite.pdf',    name: 'Piernas de Élite' },
+    // PDFs pendientes (se agregan aquí cuando estén listos):
+    'hombros-de-titan':     null,
+    'brazos-de-combate':    null,
+    'recomposicion-imperial': null,
+    'modo-definicion-total':  null,
+    'masa-bestial':           null
+};
+
+// Esta función se llama al confirmar un pago exitoso (tarjeta / PayPal).
+// Para SINPE y transferencia la entrega es manual (ya incluye nota en modal).
+window.kcDeliverPDFs = function(planName, pdfSlugs, paymentMethod) {
+    var step3 = document.getElementById('kc-modal-step-3');
+    var dlWrap = document.getElementById('kc-pdf-download-wrap');
+    var dlBtns = document.getElementById('kc-pdf-download-btns');
+    var pendingWrap = document.getElementById('kc-pdf-pending-wrap');
+
+    // Limpiar
+    if (dlBtns) dlBtns.innerHTML = '';
+    if (dlWrap) dlWrap.style.display = 'none';
+    if (pendingWrap) pendingWrap.style.display = 'none';
+
+    var isAutoPayment = (paymentMethod === 'tarjeta' || paymentMethod === 'paypal');
+    var slugsArr = pdfSlugs ? pdfSlugs.split(',').map(function(s){ return s.trim(); }) : [];
+    var availablePDFs = [];
+
+    slugsArr.forEach(function(slug) {
+        if (KC_PDF_MAP[slug] && KC_PDF_MAP[slug] !== null) {
+            availablePDFs.push({ slug: slug, info: KC_PDF_MAP[slug] });
+        }
+    });
+
+    if (isAutoPayment && availablePDFs.length > 0) {
+        // Mostrar botones de descarga inmediata
+        availablePDFs.forEach(function(item) {
+            var btn = document.createElement('a');
+            btn.href = item.info.file;
+            btn.download = item.info.name + '.pdf';
+            btn.className = 'kc-pdf-dl-btn';
+            btn.innerHTML = '<i class="fas fa-download"></i> Descargar ' + item.info.name;
+            if (dlBtns) dlBtns.appendChild(btn);
+        });
+        if (dlWrap) dlWrap.style.display = 'block';
+
+        // Actualizar mensaje de éxito
+        var msg = document.getElementById('kc-success-message');
+        if (msg) msg.textContent = '¡Tu compra fue procesada! Descarga tu programa a continuación.';
+    } else if (!isAutoPayment) {
+        // SINPE o transferencia: mostrar aviso de entrega manual
+        if (pendingWrap) pendingWrap.style.display = 'block';
+    }
+};
+
+// Hook: interceptar cuando el modal avanza al paso 3 (éxito)
+// kenny-payments.js llama a showStep(3) — extendemos esa lógica aquí.
+(function() {
+    var _origShowStep;
+    // Esperamos a que kenny-payments.js defina showStep (DOMContentLoaded ya pasó,
+    // así que lo sobrecargamos via MutationObserver en el paso 3 del modal).
+    var step3El = document.getElementById('kc-modal-step-3');
+    if (!step3El) return;
+
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+            if (m.type === 'attributes' && m.attributeName === 'style') {
+                if (step3El.style.display !== 'none' && step3El.style.display !== '') {
+                    // Paso 3 visible: obtener datos del carrito y entregar PDFs
+                    var cartItems = window.kcCartItems || [];
+                    var payMethod = window.kcLastPayMethod || '';
+                    cartItems.forEach(function(item) {
+                        if (item.pdfSlugs) {
+                            window.kcDeliverPDFs(item.plan, item.pdfSlugs, payMethod);
+                        }
+                    });
+                }
+            }
+        });
+    });
+    observer.observe(step3El, { attributes: true });
+})();
+</script>
+
+
+<script>
+/* ============================================================
+   KENNY COACH V6 — GALLERY FILTERS + LIGHTBOX
+   ============================================================ */
+(function() {
+    // ── Gallery Filter ──────────────────────────────────────
+    const filterBtns = document.querySelectorAll('.kc-gal3-filter-btn');
+    const items = document.querySelectorAll('.kc-gal3-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            items.forEach((item, i) => {
+                const match = filter === 'all' || item.dataset.cat === filter;
+                if (match) {
+                    item.classList.remove('kc-gal3-hidden');
+                    item.style.animationDelay = (i * 0.04) + 's';
+                    item.style.animation = 'none';
+                    void item.offsetWidth; // reflow
+                    item.style.animation = '';
+                } else {
+                    item.classList.add('kc-gal3-hidden');
+                }
+            });
+        });
+    });
+
+    // ── Lightbox ─────────────────────────────────────────────
+    const overlay   = document.getElementById('kc-lightbox');
+    const lbImg     = document.getElementById('kc-lb-img');
+    const lbVideo   = document.getElementById('kc-lb-video');
+    const lbCaption = document.getElementById('kc-lb-caption');
+    const lbClose   = document.getElementById('kc-lb-close');
+    const lbPrev    = document.getElementById('kc-lb-prev');
+    const lbNext    = document.getElementById('kc-lb-next');
+
+    if (!overlay) return;
+
+    let visibleItems = [];
+    let currentIdx = 0;
+
+    function getVisible() {
+        return Array.from(document.querySelectorAll('.kc-gal3-item:not(.kc-gal3-hidden)'));
+    }
+
+    function openLightbox(idx) {
+        visibleItems = getVisible();
+        currentIdx = idx;
+        showImage(currentIdx);
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        if (lbVideo) { lbVideo.pause(); }
+    }
+
+    function showImage(idx) {
+        const item = visibleItems[idx];
+        if (!item) return;
+        const cap = item.dataset.caption || '';
+        if (item.dataset.video) {
+            if (lbVideo) { lbVideo.pause(); }
+            lbImg.style.display = 'none';
+            lbVideo.style.display = '';
+            lbVideo.src = item.dataset.video;
+            lbVideo.load();
+            lbVideo.play().catch(function(){});
+        } else {
+            if (lbVideo) { lbVideo.pause(); lbVideo.removeAttribute('src'); lbVideo.style.display = 'none'; }
+            lbImg.style.display = '';
+            const src = item.dataset.src || item.querySelector('img').src;
+            lbImg.src = src;
+        }
+        lbCaption.innerHTML = '<span>' + cap + '</span>';
+        currentIdx = idx;
+    }
+
+    // Click on gallery item
+    items.forEach((item, i) => {
+        item.addEventListener('click', () => {
+            visibleItems = getVisible();
+            const visIdx = visibleItems.indexOf(item);
+            openLightbox(visIdx >= 0 ? visIdx : 0);
+        });
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeLightbox(); });
+
+    lbPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showImage((currentIdx - 1 + visibleItems.length) % visibleItems.length);
+    });
+    lbNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showImage((currentIdx + 1) % visibleItems.length);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (!overlay.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showImage((currentIdx - 1 + visibleItems.length) % visibleItems.length);
+        if (e.key === 'ArrowRight') showImage((currentIdx + 1) % visibleItems.length);
+    });
+
+    // Touch swipe
+    let touchStartX = 0;
+    overlay.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+    overlay.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 50) {
+            dx < 0 ? showImage((currentIdx + 1) % visibleItems.length) : showImage((currentIdx - 1 + visibleItems.length) % visibleItems.length);
+        }
+    });
+
+    // ── Lazy load observer ───────────────────────────────────
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        }, { rootMargin: '200px' });
+        document.querySelectorAll('.kc-gal3-item img[loading="lazy"]').forEach(img => observer.observe(img));
+    }
+
+    // ── Video thumbnail: play on hover (desktop) / when visible (mobile) ──
+    const galVideoThumb = document.querySelector('.kc-gal3-video-thumb');
+    if (galVideoThumb) {
+        const galVideoItem = galVideoThumb.closest('.kc-gal3-item');
+        galVideoItem.addEventListener('mouseenter', () => { galVideoThumb.play().catch(function(){}); });
+        galVideoItem.addEventListener('mouseleave', () => { galVideoThumb.pause(); });
+        if ('IntersectionObserver' in window) {
+            const galVideoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) { galVideoThumb.play().catch(function(){}); }
+                    else { galVideoThumb.pause(); }
+                });
+            }, { threshold: 0.5 });
+            galVideoObserver.observe(galVideoThumb);
+        }
+    }
+
+})();
+</script>
+
+<script>
+// ====== ANUNCIO: contador de promo (Programas Completos) ======
+(function () {
+    // Fecha límite del anuncio: 15 de agosto (Costa Rica, UTC-6), fin del día
+    var PROMO_DEADLINE = new Date('2026-08-15T23:59:59-06:00').getTime();
+
+    var banner  = document.getElementById('kc-prog-promo-banner');
+    var elDays  = document.getElementById('kc-cd-days');
+    var elHours = document.getElementById('kc-cd-hours');
+    var elMins  = document.getElementById('kc-cd-mins');
+    var elSecs  = document.getElementById('kc-cd-secs');
+    if (!banner) return;
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    function tick() {
+        var diff = PROMO_DEADLINE - Date.now();
+
+        if (diff <= 0) {
+            banner.style.display = 'none';
+            clearInterval(timer);
+            return;
+        }
+
+        var days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        var mins  = Math.floor((diff / (1000 * 60)) % 60);
+        var secs  = Math.floor((diff / 1000) % 60);
+
+        if (elDays)  elDays.textContent  = pad(days);
+        if (elHours) elHours.textContent = pad(hours);
+        if (elMins)  elMins.textContent  = pad(mins);
+        if (elSecs)  elSecs.textContent  = pad(secs);
+    }
+
+    var timer;
+    if (PROMO_DEADLINE > Date.now()) {
+        tick();
+        timer = setInterval(tick, 1000);
+    } else {
+        banner.style.display = 'none';
+    }
+})();
+</script>
+
+<script>
+// ====== RECORDATORIO POR CORREO (modal + envío Netlify Forms) ======
+(function () {
+    var openBtn    = document.getElementById('kc-remind-open-btn');
+    var overlay    = document.getElementById('kc-remind-overlay');
+    var closeBtn   = document.getElementById('kc-remind-close-btn');
+    var closeBtn2  = document.getElementById('kc-remind-close-btn2');
+    var form       = document.getElementById('kc-remind-form');
+    var emailInput = document.getElementById('kc-remind-email');
+    var errorMsg   = document.getElementById('kc-remind-error');
+    var submitBtn  = document.getElementById('kc-remind-submit-btn');
+    var formView   = document.getElementById('kc-remind-form-view');
+    var successView= document.getElementById('kc-remind-success-view');
+
+    if (!openBtn || !overlay || !form) return;
+
+    function openModal() {
+        overlay.classList.add('kc-remind-open');
+        document.body.style.overflow = 'hidden';
+        setTimeout(function () { emailInput.focus(); }, 100);
+    }
+
+    function closeModal() {
+        overlay.classList.remove('kc-remind-open');
+        document.body.style.overflow = '';
+    }
+
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    if (closeBtn2) closeBtn2.addEventListener('click', closeModal);
+
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) closeModal();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && overlay.classList.contains('kc-remind-open')) closeModal();
+    });
+
+    function isValidEmail(value) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    }
+
+    function encodeForm(data) {
+        return Object.keys(data)
+            .map(function (k) { return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]); })
+            .join('&');
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var email = emailInput.value.trim();
+
+        if (!isValidEmail(email)) {
+            errorMsg.classList.add('kc-remind-error-show');
+            emailInput.focus();
+            return;
+        }
+        errorMsg.classList.remove('kc-remind-error-show');
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encodeForm({
+                'form-name': 'recordatorio-oferta',
+                'email': email
+            })
+        })
+        .then(function () {
+            try { localStorage.setItem('kc_reminder_submitted', '1'); } catch (err) {}
+            formView.hidden = true;
+            successView.hidden = false;
+        })
+        .catch(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Quiero que me avisen';
+            errorMsg.textContent = 'Hubo un problema al enviar. Intenta de nuevo.';
+            errorMsg.classList.add('kc-remind-error-show');
+        });
+    });
+})();
+</script>
+
+</body>
+</html>
